@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questions>
 	<!-- 
-	<question category="Обща култура" correct-answer="TODO-INPUT" 
+	<question category="Обща култура" correct-answer-id="1" 
 		value="Кой е създателят на първия електронен дигитален компютър?">
 		<answer id="1">Джон Атанасов</answer>
 		<answer id="2">Чарлз Бабидж</answer>
