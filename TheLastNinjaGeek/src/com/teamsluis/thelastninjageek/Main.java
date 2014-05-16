@@ -2,73 +2,104 @@ package com.teamsluis.thelastninjageek;
 
 import java.awt.*;
 import java.awt.event.*;
+
 import javax.swing.*;
-import java.awt.color.*;
-import java.awt.Toolkit;
 
 public class Main {
+	int choice = 0;
+	public static JFrame gameWindow;
 
-	private static void createGameWindow() {
-		
-		// Create and display window frames.		
-		JFrame gameWindow = new JFrame("The Last Ninja Geek™");
+	public void createGameWindow() {
+
+		// Create and display window frames.
+		gameWindow = new JFrame("The Last Ninja Geek™");
 		gameWindow.getContentPane().setLayout(null);
 		gameWindow.setPreferredSize(new Dimension(800, 600));
 		gameWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		gameWindow.setResizable(false); // just for now
 		gameWindow.pack();
 		gameWindow.setVisible(true);
-		
-		// Questions window		
-		JTextArea questionsWindow = new JTextArea();
-		questionsWindow.setBounds(70, 100, 655, 260);
-		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
-		questionsWindow.setLineWrap(true);
-		questionsWindow.setWrapStyleWord(true);
-		questionsWindow.setText("Insert  XML questions  here");
-		questionsWindow.setEditable(false);
-		gameWindow.getContentPane().add(questionsWindow);
-		
-		// Labels
-		JLabel playerName = new JLabel("<html><font color=red>"
-				+ Data.namePlayer[0] + "</font></html>");
-		JLabel playerScore = new JLabel(" : "
-				+ Integer.toString(Data.scorePlayer[0]));
-		playerName.setBounds(670, 3, 100, 60);
-		playerScore.setBounds(700, 3, 100, 60);
-		gameWindow.getContentPane().add(playerName);
-		gameWindow.getContentPane().add(playerScore);
-
-		// Create and set BUTTONS
-		JButton[] buttons = new JButton[4];
-		for (int i = 0; i < buttons.length; i++) {
-			buttons[i] = new JButton();
-			buttons[i].setText("Insert XML answers here");
-			gameWindow.getContentPane().add(buttons[i]);
-			buttons[i].addActionListener(new ActionListener() {
-
-				public void actionPerformed(ActionEvent e) {
-					String pName = playerName.getText();
-		
-					playerScore.setText(" : "
-							+ Integer.toString(Data.scorePlayer[0] += 1));
-				}
-			});
+		// List
+		JLabel[] menuList = new JLabel[3];
+		String[] bName = { "   START", " OPTIONS", "    EXIT" };
+		int gap = 370;
+		for (int i = 0; i < menuList.length; i++) {
+			menuList[i] = new JLabel();
+			menuList[i].setFont(new java.awt.Font("Tahoma", 2, 18));
+			menuList[i].setText(bName[i]);
+			menuList[i].setBounds(340, gap, 100, 20);
+			menuList[i].setOpaque(true);
+			gameWindow.add(menuList[i]);
+			gap += 40;
 		}
-		buttons[0].setBounds(70, 410, 300, 60); // X, Y, Width,Height format;
-		buttons[1].setBounds(420, 410, 300, 60);
-		buttons[2].setBounds(70, 490, 300, 60);
-		buttons[3].setBounds(420, 490, 300, 60);
-		
-	
-	    }
+		// Key EVENTS
+		final Color bkgr = menuList[1].getBackground();
+		menuList[0].setBackground(Color.RED);
+		menuList[1].getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0), "up");
+		menuList[1].getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "enter");
+		menuList[1].getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "down");
+
+		menuList[1].getActionMap().put("up", new AbstractAction() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				menuList[choice].setBackground(bkgr);
+				choice--;
+				if (choice < 0) {
+					choice = 2;
+				}
+				menuList[choice].setBackground(Color.red);
+			}
+		});
+		menuList[1].getActionMap().put("down", new AbstractAction() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				menuList[choice].setBackground(bkgr);
+				choice++;
+				if (choice > 2) {
+					choice = 0;
+				}
+				menuList[choice].setBackground(Color.red);
+			}
+		});
+
+		menuList[1].getActionMap().put("enter", new AbstractAction() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (choice == 0) {
+					Game.gameComencing();
+				}
+				for (int i = 0; i < menuList.length; i++) {
+					menuList[i].setVisible(false);
+				}
+				System.out.println("Entering new game state..");
+			}
+		});
+	}
 
 	public static void main(String[] args) {
 
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-			 
-				createGameWindow();
+				Main main = new Main();
+				main.createGameWindow();
 			}
 		});
 	}
