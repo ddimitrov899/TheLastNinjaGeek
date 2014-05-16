@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+	 <!-- COPMUTER SYSTEMS -->
+	 <question category="Computer systems" value="Which of the following is not a Single-board Computer" correct-answer-id="2">
+	 	<answer id="1">Raspberry Pi</answer>
+	 	<answer id="2">Cooler Master Hyper</answer>
+	 	<answer id="3">BeagleBoard</answer>
+	 	<answer id="4">Arduino</answer>
+	 </question>
+	 <question category="Computer systems" value="Which type of RAM is the most frequent in modern PCs?" correct-answer-id="3">
+	 	<answer id="1">SDR</answer>
+	 	<answer id="2">QDR</answer>
+	 	<answer id="3">SDRAM</answer>
+	 	<answer id="4">ROM</answer>
+	 </question>
+	 <question category="Computer systems" value="Which of the following is connected to the Northbridge of a motherboard directly?" correct-answer-id="1">
+	 	<answer id="1">Processor</answer>
+	 	<answer id="2">Keyboard</answer>
+	 	<answer id="3">Sound card</answer>
+	 	<answer id="4">Network card</answer>
+	 </question>
+	 <question category="Computer systems" value="Which of the following is a peripheral device?" correct-answer-id="4">
+	 	<answer id="1">Printer</answer>
+	 	<answer id="2">External hard drive</answer>
+	 	<answer id="3">Monitor</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <question category="Computer systems" value="Which of the following is NOT a video card output port standard?" correct-answer-id="4">
+	 	<answer id="1">HDMI</answer>
+	 	<answer id="2">VGA</answer>
+	 	<answer id="3">DisplayPort</answer>
+	 	<answer id="4">VideoConnect</answer>
+	 </question>
+	 <question category="Computer systems" value="Which interface for connecting storage devices to a computer is the most widespread one nowadays?" correct-answer-id="2">
+	 	<answer id="1">ATA</answer>
+	 	<answer id="2">SATA</answer>
+	 	<answer id="3">SCSI</answer>
+	 	<answer id="4">AGP</answer>
+	 </question>
+	 <question category="Computer systems" value="Which of the following devices CANNOT utilize the USB interface for connection and data transfer?" correct-answer-id="4">
+	 	<answer id="1">Sound card</answer>
+	 	<answer id="2">Web camera</answer>
+	 	<answer id="3">Microphone</answer>
+	 	<answer id="4">All of the above CAN utilize USB</answer>
+	 </question>
+	 <!-- COPMUTER PROGRAMS -->
+	 <question category="Computer programs" value="Which of the following is not a software Design pattern?" correct-answer-id="1">
+	 	<answer id="1">Inception</answer>
+	 	<answer id="2">Bridge</answer>
+	 	<answer id="3">Memento</answer>
+	 	<answer id="4">Iterator</answer>
+	 </question>
+	 <question category="Computer programs" value="Which of the following is the most appropriate for backup of an important data?" correct-answer-id="4">
+	 	<answer id="1">Google Drive</answer>
+	 	<answer id="2">Git + github</answer>
+	 	<answer id="3">Dropbox</answer>
+	 	<answer id="4">Local Arhives</answer>
+	 </question>
+	 <question category="Computer programs" value="Which of the following file extension is typical for Linux operating system?" correct-answer-id="3">
+	 	<answer id="1">.exe</answer>
+	 	<answer id="2">.docx</answer>
+	 	<answer id="3">.tar</answer>
+	 	<answer id="4">.bat</answer>
+	 </question>
+	 <question category="Computer programs" value="Which of the following is NOT a cloud service model?" correct-answer-id="1">
+	 	<answer id="1">IT as a service (ITaaS)</answer>
+	 	<answer id="2">Software as a service (SaaS)</answer>
+	 	<answer id="3">Platform as a service (PaaS)</answer>
+	 	<answer id="4">Infrastructure as a service (IaaS)</answer>
+	 </question>
+	 <question category="Computer programs" value="How is the Android's java virtual machine called?" correct-answer-id="2">
+	 	<answer id="1">Tamarin</answer>
+	 	<answer id="2">Dalvik</answer>
+	 	<answer id="3">Common Language Infrastructure (CLI)</answer>
+	 	<answer id="4">Java virtual machine (JVM)</answer>
+	 </question>
+	 <question category="Computer programs" value="Which of the following is NOT an Integrated Development Environment?" correct-answer-id="3">
+	 	<answer id="1">Visual Studio</answer>
+	 	<answer id="2">Eclipse</answer>
+	 	<answer id="3">Notepad++</answer>
+	 	<answer id="4">Zend Studio</answer>
+	 </question>
+	 <!-- HANDLING THE COMPUTER SYSTEMS AND PROGRAMS -->
+	 <question category="Handling computer systems and programs" value="Which of the following programs creates installers for the software?" correct-answer-id="3">
+	 	<answer id="1">Windows Installer</answer>
+	 	<answer id="2">InstallShield</answer>
+	 	<answer id="3">Inno Setup</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="Which of the following is least likely to lead to an evidently slowdown in the computerized system and the drivers works fine?" correct-answer-id="3">
+	 	<answer id="1">100% CPU load</answer>
+	 	<answer id="2">100% load on the hard disk</answer>
+	 	<answer id="3">100% load the network card</answer>
+	 	<answer id="4">100% load on RAM</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="Where are the system registry files stored in NT-Based Windows operating systems?" correct-answer-id="3">
+	 	<answer id="1">C:\Windows\</answer>
+	 	<answer id="2">C:\Program Files\Windows NT\Accessories\</answer>
+	 	<answer id="3">C:\Windows\System32\Config\</answer>
+	 	<answer id="4">C:\Windows\System32\drivers\etc\</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="Which of the following is an antivirus software?" correct-answer-id="1">
+	 	<answer id="1">Microsoft Security Essentials</answer>
+	 	<answer id="2">Norton Ghost</answer>
+	 	<answer id="3">AVG PC TuneUp</answer>
+	 	<answer id="4">ESET Gateway Security</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="What issue should be troubleshooted when “Non-system disk or disk error” message appears during
+computer boot process?" correct-answer-id="1">
+	 	<answer id="1">The computer failed to locate a boot sector with an operating system installed</answer>
+	 	<answer id="2">A video card driver cannot be found</answer>
+	 	<answer id="3">The CPU is overheated</answer>
+	 	<answer id="4">A memory size error</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="Which of the following can be used in Windows systems to start the print spooler from the command prompt? SPOOL is „simultaneous peripheral operations on-line“" correct-answer-id="2">
+	 	<answer id="1">Start/Spooler</answer>
+	 	<answer id="2">Net start spooler</answer>
+	 	<answer id="3">Spooler.exe start</answer>
+	 	<answer id="4">Run/Spooler</answer>
+	 </question>
+	 <question category="Handling computer systems and programs" value="In Windows systems, when the GUI interface turns into text mode with a blue background, this is referred to as?" correct-answer-id="4">
+	 	<answer id="1">A kernel excursion</answer>
+	 	<answer id="2">An unrecoverable application error</answer>
+	 	<answer id="3">A virus warning</answer>
+	 	<answer id="4">A stop error</answer>
+	 </question>
+	 <!-- DATA TRANSFER AND NUMERAL SYSTEMS -->
+	 <question category="Data transfer and numeral systems" value="Which of the following is the reason in LAN cables (10 and 100BASE-T/X) to be used Twisted Pairs?" correct-answer-id="4">
+	 	<answer id="1">Saves the length of the wires</answer>
+	 	<answer id="2">Increases the strength of the cable</answer>
+	 	<answer id="3">Twisted pairs occupy less space</answer>
+	 	<answer id="4">Reduce the "the interference" from nearby sources</answer>
+	 </question>
+	 <question category="Data transfer and numeral systems" value="Which numeral system are computers using for internal calculations?" correct-answer-id="3">
+	 	<answer id="1">Decimal</answer>
+	 	<answer id="2">Octal</answer>
+	 	<answer id="3">Binary</answer>
+	 	<answer id="4">Ternary</answer>
+	 </question>
+	 <question category="Data transfer and numeral systems" value="Convert the binary number 11001 into decimal number. What is the correct result?" correct-answer-id="4">
+	 	<answer id="1">23</answer>
+	 	<answer id="2">31</answer>
+	 	<answer id="3">17</answer>
+	 	<answer id="4">25</answer>
+	 </question>
+	 <question category="Data transfer and numeral systems" value="What are the last six symbols of the hexadecimal numeral system base?" correct-answer-id="3">
+	 	<answer id="1">10, 11, 12, 13, 14, 15</answer>
+	 	<answer id="2">M, N, O, P, Q, R</answer>
+	 	<answer id="3">A, B, C, D, E, F</answer>
+	 	<answer id="4">11, 12, 13, 14, 15, 16</answer>
+	 </question>
+	 <question category="Data transfer and numeral systems" value="Which of the below is not a data transmission medium?" correct-answer-id="4">
+	 	<answer id="1">Ethernet cable</answer>
+	 	<answer id="2">Telephone wire</answer>
+	 	<answer id="3">Wireless signal</answer>
+	 	<answer id="4">Mouse</answer>
+	 </question>
+	 <question category="Data transfer and numeral systems" value="Which of the following is not a data transmission method?" correct-answer-id="1">
+	 	<answer id="1">Rendering</answer>
+	 	<answer id="2">Synchronous</answer>
+	 	<answer id="3">Serial</answer>
+	 	<answer id="4">Asynchronous</answer>
+	 </question>
+	 <!-- OPERATING SYSTEMS -->
+	 <question category="Operating systems" value="Windows 8 - the universal way to enable visualization on the second monitor, or on a projector is?" correct-answer-id="1">
+	 	<answer id="1">From Devices Charm</answer>
+	 	<answer id="2">A fn key + F1</answer>
+	 	<answer id="3">The option: Desktop &gt; right click &gt; Screen resolution</answer>
+	 	<answer id="4">By the ATI Catalyst Control Center</answer>
+	 </question>
+	 <question category="Operating systems" value="Which of the following is not an Operating System?" correct-answer-id="2">
+	 	<answer id="1">Linux</answer>
+	 	<answer id="2">Safari</answer>
+	 	<answer id="3">Windows</answer>
+	 	<answer id="4">Unix</answer>
+	 </question>
+	 <question category="Operating systems" value="What does the term “kernel” mean?" correct-answer-id="3">
+	 	<answer id="1">File system used by Apple’s OS X operating system</answer>
+	 	<answer id="2">Computer hardware device that manages the input/output interactions with the user</answer>
+	 	<answer id="3">Computer program that manages the input/output requests of software and translates them to specific instructions for the processor and other components of the computer system</answer>
+	 	<answer id="4">Computer program which comes with some operating systems and is used to record logs of all the
+interactions of the operating system and the application software</answer>
+	 </question>
+	 <!-- FILE SYSTEMS -->
+	 <question category="File systems" value="Which of the following is not true?" correct-answer-id="3">
+	 	<answer id="1">NTFS file system is used in the modern Windows Operating systems</answer>
+	 	<answer id="2">Ext2 is the name of a file system</answer>
+	 	<answer id="3">The file system is responsible for distributing the operative memory for all the running processes in the computer system</answer>
+	 	<answer id="4">The file system is responsible for allocating and organizing physical disk space for files and directories</answer>
+	 </question>
+	 <question category="File systems" value="Which of the following is NOT a responsibility of the Operating System core?" correct-answer-id="4">
+	 	<answer id="1">Memory management</answer>
+	 	<answer id="2">Hardware resource management</answer>
+	 	<answer id="3">Driver management</answer>
+	 	<answer id="4">User interface management</answer>
+	 </question>
+	 <question category="File systems" value="What does the term GUI stands for?" correct-answer-id="2">
+	 	<answer id="1">Graphical Unified Interface</answer>
+	 	<answer id="2">Graphical User Interface</answer>
+	 	<answer id="3">Guaranteed User Immersion</answer>
+	 	<answer id="4">Generate Utilize Interact</answer>
+	 </question>	 
+	 <!-- COMPRESSING AND DECOMPRESSING -->
+	 <question category="Compressing and Decompressing" value="Which of the following commands or formats for compressing and archiving in the Linux OS and UNIX is NOT supported by default?" correct-answer-id="4">
+	 	<answer id="1">gzip</answer>
+	 	<answer id="2">bzip2</answer>
+	 	<answer id="3">tar</answer>
+	 	<answer id="4">rar</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="Which compression algorithm uses discrete cosine transformation - DCT?" correct-answer-id="3">
+	 	<answer id="1">Huffman</answer>
+	 	<answer id="2">Lampel-Ziv</answer>
+	 	<answer id="3">JPEG</answer>
+	 	<answer id="4">LZW</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="In which file format compression over the original data was not applied?" correct-answer-id="1">
+	 	<answer id="1">.bmp</answer>
+	 	<answer id="2">.jpg</answer>
+	 	<answer id="3">.png</answer>
+	 	<answer id="4">.zip</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="Which of the following is NOT true?" correct-answer-id="3">
+	 	<answer id="1">Lossy data compression could not be used on text files</answer>
+	 	<answer id="2">In lossless compression after the decompression the size of the data is the same as the original</answer>
+	 	<answer id="3">Multimedia data files (audio, video, images) are always compressed by lossy data compression</answer>
+	 	<answer id="4">In lossless compression after the decompression the size of the data is the same as the original</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="Which of the following is NOT file extension for files that contain compressed data?" correct-answer-id="2">
+	 	<answer id="1">.7z</answer>
+	 	<answer id="2">.cs</answer>
+	 	<answer id="3">.tar</answer>
+	 	<answer id="4">.gz</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="Which of the following statements about symmetrical and asymmetrical compression algorithms is NOT true?" correct-answer-id="4">
+	 	<answer id="1">Symmetry and asymmetry, in the context of data compression, refers to the time relation between compression and decompression</answer>
+	 	<answer id="2">Symmetric algorithms are used for media streaming (for example Internet TV) because the longer time for compression in the server or decompression in the client would lead to delays in the viewing of the data</answer>
+	 	<answer id="3">Asymmetrical algorithms with faster compression than decompression are used for backing up or archiving data, as in these cases data is more often stored rather than retrieved</answer>
+	 	<answer id="4">All are true</answer>
+	 </question>
+	 <question category="Compressing and Decompressing" value="Which of the following is NOT lossless compression algorithm?" correct-answer-id="3">
+	 	<answer id="1">Shannon-Fano coding</answer>
+	 	<answer id="2">Huffman coding</answer>
+	 	<answer id="3">Discrete cosine transformation</answer>
+	 	<answer id="4">Run-length encoding</answer>
+	 </question>
+	 <!-- COMPUTER TEXT PROCESSING -->
+	 <question category="Computer Text Processing" value="Which of the following is true for Linked object and Embedded object in Microsoft Word?" correct-answer-id="3">
+	 	<answer id="1">They mean the same thing</answer>
+	 	<answer id="2">The Embedded object becomes a part of the Word file and increases the file size</answer>
+	 	<answer id="3">The Linked object represents a hyperlink to website</answer>
+	 	<answer id="4">When an object is Embedded and if we change it source, the Embedded object changes itself too</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="What is the correct term for unreadable characters representation of software that does not recognize the corresponding encoding of the text?" correct-answer-id="4">
+	 	<answer id="1">Integration hell</answer>
+	 	<answer id="2">Unicode</answer>
+	 	<answer id="3">Monkeyness</answer>
+	 	<answer id="4">Mojibake</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="Which of the following file formats does NOT support other text formatting besides font size and font style?" correct-answer-id="3">
+	 	<answer id="1">DOC</answer>
+	 	<answer id="2">RTF</answer>
+	 	<answer id="3">TXT</answer>
+	 	<answer id="4">ODT</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="Which of the following format is NOT a text file format?" correct-answer-id="2">
+	 	<answer id="1">TXT</answer>
+	 	<answer id="2">PPT</answer>
+	 	<answer id="3">RTF</answer>
+	 	<answer id="4">DOC</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="Which of the following encodings can represent most of the scripts (i.e. Latin, Cyrillic, Greek etc.) used in the world?" correct-answer-id="3">
+	 	<answer id="1">Windows-1251</answer>
+	 	<answer id="2">ASCII</answer>
+	 	<answer id="3">Unicode</answer>
+	 	<answer id="4">Windows-1255</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="Which of the following is NOT a word processor?" correct-answer-id="1">
+	 	<answer id="1">Apple Keynote</answer>
+	 	<answer id="2">Google Docs</answer>
+	 	<answer id="3">LibreOffice Writer</answer>
+	 	<answer id="4">WordPad</answer>
+	 </question>
+	 <question category="Computer Text Processing" value="Which of the following statements is TRUE?" correct-answer-id="2">
+	 	<answer id="1">Google does NOT have a word processing application</answer>
+	 	<answer id="2">Computer files use different encodings to store and represent text</answer>
+	 	<answer id="3">A PDF file cannot contain images and tables, only text</answer>
+	 	<answer id="4">A TXT file can contain complex text formatting, while DOCX cannot</answer>
+	 </question>
+	 <!-- COMPUTER GRAPHICS -->
+	 <question category="Computer graphics" value="Which of these terms is a two-dimensional image or animation that is a part of a larger scene in 2D game?" correct-answer-id="2">
+	 	<answer id="1">Pixel art</answer>
+	 	<answer id="2">Sprite</answer>
+	 	<answer id="3">Billboard</answer>
+	 	<answer id="4">Bit map</answer>
+	 </question>
+	 <question category="Computer graphics" value="In the computer graphics, which of the following allows the highest quality display of highly inclined, relative to the screen textures?" correct-answer-id="1">
+	 	<answer id="1">The Anisotropic filtering</answer>
+	 	<answer id="2">The Bilinear filtering</answer>
+	 	<answer id="3">The Geometry shader</answer>
+	 	<answer id="4">The Depth of field</answer>
+	 </question>
+	 <question category="Computer graphics" value="Which of the following is known as an additive color model?" correct-answer-id="3">
+	 	<answer id="1">CMYK</answer>
+	 	<answer id="2">HDMI</answer>
+	 	<answer id="3">RGB</answer>
+	 	<answer id="4">VGA</answer>
+	 </question>
+	 <question category="Computer graphics" value="Which of the following is known as a subtractive color model?" correct-answer-id="2">
+	 	<answer id="1">Pantone</answer>
+	 	<answer id="2">CMYK</answer>
+	 	<answer id="3">VGA</answer>
+	 	<answer id="4">HDMI</answer>
+	 </question>
+	 <question category="Computer graphics" value="In the context of color models what does the abbreviation RGBA stand for?" correct-answer-id="1">
+	 	<answer id="1">Red Green Blue Alpha</answer>
+	 	<answer id="2">Red Green Blue Azure</answer>
+	 	<answer id="3">Rose Garden Botanic Association</answer>
+	 	<answer id="4">Rose Gold Brown Aquamarine</answer>
+	 </question>
+	 <question category="Computer graphics" value="What is used to measure the depth of the color?" correct-answer-id="1">
+	 	<answer id="1">Bit</answer>
+	 	<answer id="2">Pixel</answer>
+	 	<answer id="3">Dot</answer>
+	 	<answer id="4">Hertz</answer>
+	 </question>
+	 <question category="Computer graphics" value="Which of the following file formats is appropriate if you want to store an image or short animation with maximum 256 colors?" correct-answer-id="2">
+	 	<answer id="1">.jpeg</answer>
+	 	<answer id="2">.gif</answer>
+	 	<answer id="3">.mkv</answer>
+	 	<answer id="4">.cs</answer>
+	 </question>
+	 <!-- INFORMATION SYSTEMS -->
+	 <question category="Information systems" value="Which of the following is a centralized management system for corporate computers and networks?" correct-answer-id="4">
+	 	<answer id="1">GroupController</answer>
+	 	<answer id="2">DirectAccess</answer>
+	 	<answer id="3">Remote Desktop</answer>
+	 	<answer id="4">Active Directory</answer>
+	 </question>
+	 <question category="Information systems" value="Which is the correct definition of information system?" correct-answer-id="3">
+	 	<answer id="1">Web based software, hosted in the cloud</answer>
+	 	<answer id="2">A collection of related data organized for convenient access</answer>
+	 	<answer id="3">An integrated set of hardware and software components used by people for collecting, storing, and processing data and for delivering information, knowledge, and digital products</answer>
+	 	<answer id="4">A computer program that allows creating, editing and publishing content</answer>
+	 </question>
+	 <question category="Information systems" value="What is NOT true about the CRM systems?" correct-answer-id="1">
+	 	<answer id="1">Essential tool for creating video and printed ads</answer>
+	 	<answer id="2">Aggregate and display reports that answer specific marketing questions</answer>
+	 	<answer id="3">Standardize interaction with customers</answer>
+	 	<answer id="4">Track information system about customers and products purchased</answer>
+	 </question>
+	 <question category="Information systems" value="What does CAD stand for?" correct-answer-id="4">
+	 	<answer id="1">Software for web design</answer>
+	 	<answer id="2">Lossless compression algorithm</answer>
+	 	<answer id="3">Network protocol from the TCP/IP stack</answer>
+	 	<answer id="4">Software that assists in the creation, modification, analysis or optimization of a product’s design</answer>
+	 </question>
+	 <question category="Information systems" value="What is TRUE about the ERP systems?" correct-answer-id="1">
+	 	<answer id="1">Set of integrated enterprise software tools designed to facilitate the flow of information between all departments within a business and serve all their needs</answer>
+	 	<answer id="2">Integrated development environment</answer>
+	 	<answer id="3">Accounting software systems</answer>
+	 	<answer id="4">Computer systems used to design and manufacture products</answer>
+	 </question>
+	 <question category="Information systems" value="Which of the following is NOT a characteristic of the cloud computing?" correct-answer-id="2">
+	 	<answer id="1">Resources are shared by multiple users and dynamically re-allocated on demand</answer>
+	 	<answer id="2">Applications and data of multiple users are hosted on one and the same server</answer>
+	 	<answer id="3">Includes several fundamental models like infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS)</answer>
+	 	<answer id="4">Distributed computing over a network with the ability to run applications on many connected computers at the same time</answer>
+	 </question>
+	 <!-- SECURITY AND DATA PROTECTION -->
+	 <question category="Security and data protection" value="In what type web systems is an absolute must that SSL certificate?" correct-answer-id="2">
+	 	<answer id="1">Search Engines </answer>
+	 	<answer id="2">Online Banking</answer>
+	 	<answer id="3">Social Networks </answer>
+	 	<answer id="4">File sharing systems</answer>
+	 </question>
+	 <question category="Security and data protection" value="Which of the following is NOT an encryption method?" correct-answer-id="2">
+	 	<answer id="1">DES</answer>
+	 	<answer id="2">MD5</answer>
+	 	<answer id="3">Camellia</answer>
+	 	<answer id="4">Blowfish</answer>
+	 </question>
+	 <question category="Security and data protection" value="Which of the statements below is FALSE?" correct-answer-id="1">
+	 	<answer id="1">You can decrypt a message sent to someone if you have their public key</answer>
+	 	<answer id="2">RSA is an asymmetric method of encryption</answer>
+	 	<answer id="3">A DES symmetric key can’t be easily broken by a modern computer</answer>
+	 	<answer id="4">Asymmetric encryption is considered more secure than the symmetric encryption</answer>
+	 </question>
+	 <question category="Security and data protection" value="Which of the following is a widely used hashing algorithm?" correct-answer-id="1">
+	 	<answer id="1">SHA-1</answer>
+	 	<answer id="2">HTTP</answer>
+	 	<answer id="3">AES</answer>
+	 	<answer id="4">TSL</answer>
+	 </question>
+	 <question category="Security and data protection" value="Which one of the protocols below is used for a secure email transfer?" correct-answer-id="3">
+	 	<answer id="1">FTP</answer>
+	 	<answer id="2">SMTP</answer>
+	 	<answer id="3">S/MIME</answer>
+	 	<answer id="4">UDP</answer>
+	 </question>
+	 <question category="Security and data protection" value="Which network attack can block a traffic to the network or make it become irresponsive and crash?" correct-answer-id="4">
+	 	<answer id="1">Identity Spoofing - IP Address Spoofing</answer>
+	 	<answer id="2">Eavesdropping</answer>
+	 	<answer id="3">Password-Based Attack</answer>
+	 	<answer id="4">Denial-of-Service Attack</answer>
+	 </question>
+	 <!-- COMPUTER PRESENTATION OF INFORMATION-->
+	 <question category="Computer presentation of information" value="Which of the following audio formats are not supported as part of the HTML5 audio tag by any of the modern web browsers?" correct-answer-id="2">
+	 	<answer id="1">AAC</answer>
+	 	<answer id="2">Flac</answer>
+	 	<answer id="3">Ogg Vorbis</answer>
+	 	<answer id="4">MP3</answer>
+	 </question>
+	 <question category="Computer presentation of information" value="Which of the following statements best describes presentation software?" correct-answer-id="4">
+	 	<answer id="1">Used to edit images</answer>
+	 	<answer id="2">Used to create slides for visual presentations in classes, training courses etc.</answer>
+	 	<answer id="3">Used to carry out calculations, create graphs etc.</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <question category="Computer presentation of information" value="How is the presentation module in the OpenOffice package called?" correct-answer-id="1">
+	 	<answer id="1">Impress</answer>
+	 	<answer id="2">Draw</answer>
+	 	<answer id="3">Sliderocket</answer>
+	 	<answer id="4">PowerPoint</answer>
+	 </question>
+	 <question category="Computer presentation of information" value="Which of the following file formats is NOT used by default by a presentation software?" correct-answer-id="2">
+	 	<answer id="1">.ODP</answer>
+	 	<answer id="2">.PNG</answer>
+	 	<answer id="3">.KEYNOTE</answer>
+	 	<answer id="4">All of the above are used as a default format</answer>
+	 </question>
+	 <question category="Computer presentation of information" value="Which of the following CANNOT be used as a presentation software?" correct-answer-id="4">
+	 	<answer id="1">Google Docs</answer>
+	 	<answer id="2">Prezi</answer>
+	 	<answer id="3">PowerPoint</answer>
+	 	<answer id="4">Audacity</answer>
+	 </question>
+	 <question category="Computer presentation of information" value="Which of the following is considered BAD practice for presentations?" correct-answer-id="4">
+	 	<answer id="1">Using attractive and unusual fonts</answer>
+	 	<answer id="2">Colourful background textures</answer>
+	 	<answer id="3">Putting only text in the slides</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <!-- MULTIMEDIA -->
+	 <question category="Multimedia" value="OGG format is designed to provide for efficient streaming and manipulation of high quality digital multimedia. What does OGG extension stand for?" correct-answer-id="2">
+	 	<answer id="1">Online Gaming Group</answer>
+	 	<answer id="2">Ogging - jargon from the computer game Netrek</answer>
+	 	<answer id="3">Our Good Goal</answer>
+	 	<answer id="4">Oh, Good God!</answer>
+	 </question>
+	 <question category="Multimedia" value="Which of the following is NOT true for MKV file format?" correct-answer-id="3">
+	 	<answer id="1">MKV is an open standard free container format</answer>
+	 	<answer id="2">MKV can hold several video streams</answer>
+	 	<answer id="3">MKV can hold videos, encoded only with H264 video decoder</answer>
+	 	<answer id="4">MKV can hold pictures</answer>
+	 </question>
+	 <question category="Multimedia" value="What is the maximum video resolution of a DVD-Video?" correct-answer-id="1">
+	 	<answer id="1">720 x 576 pixels</answer>
+	 	<answer id="2">1280 x 720 pixels</answer>
+	 	<answer id="3">320 x 200 pixels</answer>
+	 	<answer id="4">640 x 480 pixels</answer>
+	 </question>
+	 <question category="Multimedia" value="Which of the following is NOT an audio codec?" correct-answer-id="4">
+	 	<answer id="1">AAC</answer>
+	 	<answer id="2">WMA</answer>
+	 	<answer id="3">ATRAC</answer>
+	 	<answer id="4">AUX</answer>
+	 </question>
+	 <question category="Multimedia" value="Which of the following multimedia players is open source?" correct-answer-id="3">
+	 	<answer id="1">QuickTime</answer>
+	 	<answer id="2">BS Player</answer>
+	 	<answer id="3">Media Player Classic</answer>
+	 	<answer id="4">GOM Player</answer>
+	 </question>
+	 <!-- NETWORKS -->
+	 <question category="Networks" value="Which statement is NOT true?" correct-answer-id="1">
+	 	<answer id="1">The TCP and UDP protocols are part of the transport layer of the OSI model</answer>
+	 	<answer id="2">The UDP headers are smaller in size than those of TCP</answer>
+	 	<answer id="3">The TCP transmits data faster than the UDP</answer>
+	 	<answer id="4">The TCP ensures the delivery of a message over the network while UDP does not</answer>
+	 </question>
+	 <question category="Networks" value="In IPv4, what is the meaning of the number after the slash in: 115.134.42.0/24? " correct-answer-id="1">
+	 	<answer id="1">A subnet with up to 2^8 addresses</answer>
+	 	<answer id="2">A subnet with exactly 24 addresses</answer>
+	 	<answer id="3">A subnet with up to 2^24 addresses</answer>
+	 	<answer id="4">This record is valid only for IPv6</answer>
+	 </question>
+	 <question category="Networks" value="Which of the following below is not a network protocol?" correct-answer-id="3">
+	 	<answer id="1">UDP</answer>
+	 	<answer id="2">TCP</answer>
+	 	<answer id="3">HDMI</answer>
+	 	<answer id="4">NetBIOS</answer>
+	 </question>
+	 <question category="Networks" value="DNS Server is used to?" correct-answer-id="2">
+	 	<answer id="1">Assign automatically IP addresses to client computers and other TCP/IP devices</answer>
+	 	<answer id="2">Translate domain names to IP addresses needed for the purpose of locating computer devices worldwide</answer>
+	 	<answer id="3">compress files and store them in the cloud</answer>
+	 	<answer id="4">send information through a secured channel over the Internet</answer>
+	 </question>
+	 <question category="Networks" value="From the below list which one is the Wi-Fi connection standard?" correct-answer-id="4">
+	 	<answer id="1">802.3</answer>
+	 	<answer id="2">15.03</answer>
+	 	<answer id="3">14.1g</answer>
+	 	<answer id="4">802.11</answer>
+	 </question>
+	 <question category="Networks" value="What is the name of a computer's network adapter?" correct-answer-id="2">
+	 	<answer id="1">Monitor</answer>
+	 	<answer id="2">LAN adapter</answer>
+	 	<answer id="3">Transistor</answer>
+	 	<answer id="4">Router</answer>
+	 </question>
+	 <!-- INTERNET -->
+	 <question category="Internet" value="What does the DNAME Record (DNS record)?" correct-answer-id="3">
+	 	<answer id="1">Redirect email massages</answer>
+	 	<answer id="2">Directs the domain to the IP address</answer>
+	 	<answer id="3">Specifies the DNS zone</answer>
+	 	<answer id="4">Creates an alias for the domain and all its sub domains</answer>
+	 </question>
+	 <question category="Internet" value="How many bits comprises an IPv6 address?" correct-answer-id="3">
+	 	<answer id="1">32</answer>
+	 	<answer id="2">64</answer>
+	 	<answer id="3">128</answer>
+	 	<answer id="4">512</answer>
+	 </question>
+	 <question category="Internet" value="Which of the following is a valid iPv6 address?" correct-answer-id="1">
+	 	<answer id="1">2001:9AD:7691:F1:4C9:0:5123:47</answer>
+	 	<answer id="2">187.58.65.0.65.87.65.74</answer>
+	 	<answer id="3">255.255.255.0</answer>
+	 	<answer id="4">D1:F5:43:6C:8B:9G</answer>
+	 </question>
+	 <question category="Internet" value="Which of the following describes the term SSL?" correct-answer-id="4">
+	 	<answer id="1">Internet service for instant communication</answer>
+	 	<answer id="2">Mail server protocol</answer>
+	 	<answer id="3">Type of remote control software</answer>
+	 	<answer id="4">Cryptographic communication protocol</answer>
+	 </question>
+	 <question category="Internet" value="Which of the following is not true?" correct-answer-id="4">
+	 	<answer id="1">Satellite internet has a larger latency rate compared to most other types of internet access - somewhere around 1 second</answer>
+	 	<answer id="2">IEEE 802.11 is a wireless network standard</answer>
+	 	<answer id="3">4G uses mobile broadband to grant internet access</answer>
+	 	<answer id="4">ISDN provides internet access via coaxial cable</answer>
+	 </question>
+	 <question category="Internet" value="What is the correct URL address for the following example “homework word (doc) file that is located on a host with top level domain - com, second level domain learnit and third level domain homework”?" correct-answer-id="2">
+	 	<answer id="1">homework.doc.homework.learnit.com</answer>
+	 	<answer id="2">homework.learnit.com/homework.doc</answer>
+	 	<answer id="3">homework.com/learnit/homework.doc</answer>
+	 	<answer id="4">learnit.com/homework/homework.doc</answer>
+	 </question>
+	 <question category="Internet" value="What is the function of the Domain name system (DNS)?" correct-answer-id="1">
+	 	<answer id="1">Translate domain names into IP addresses</answer>
+	 	<answer id="2">Generate domain names for new websites</answer>
+	 	<answer id="3">Provide hosting for new domain names</answer>
+	 	<answer id="4">Assign a domain name to each personal computer connected to the internet</answer>
+	 </question>
+	 <!-- ELECTRONIC COMMUNICATION -->
+	 <question category="Electronic communication" value="The first known world network for the wire communication is approximately dating from  the: " correct-answer-id="2">
+	 	<answer id="1">1900</answer>
+	 	<answer id="2">1933</answer>
+	 	<answer id="3">1956</answer>
+	 	<answer id="4">1991</answer>
+	 </question>
+	 <question category="Electronic communication" value="Which mail transfer protocol is alternative for POP3?" correct-answer-id="2">
+	 	<answer id="1">SMTP</answer>
+	 	<answer id="2">IMAP</answer>
+	 	<answer id="3">FTP</answer>
+	 	<answer id="4">All of them</answer>
+	 </question>
+	 <question category="Electronic communication" value="Which email client is NOT web-based?" correct-answer-id="1">
+	 	<answer id="1">Mozilla Thunderbird</answer>
+	 	<answer id="2">Yahoo! Mail</answer>
+	 	<answer id="3">Gmail</answer>
+	 	<answer id="4">abv.bg</answer>
+	 </question>
+	 <question category="Electronic communication" value="Which of the following is NOT true for VoIP?" correct-answer-id="4">
+	 	<answer id="1">Uses IP networks such as Internet for voice communications</answer>
+	 	<answer id="2">Allows interruptions in the audio/video signal due to data packages loss</answer>
+	 	<answer id="3">Transforms the analogical audio/video signal into digital and vice versa</answer>
+	 	<answer id="4">Needs two computers in order to make a communication</answer>
+	 </question>
+	 <question category="Electronic communication" value="Peer-to-peer communication is used in?" correct-answer-id="1">
+	 	<answer id="1">Torrent clients such as uTorrent or BitComet</answer>
+	 	<answer id="2">Email clients such as Microsoft Outlook</answer>
+	 	<answer id="3">Instant messaging clients such as Skype, ICQ, MSN Messenger or Google Talk</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <question category="Electronic communication" value="What is TRUE for MMS and SMS messages?" correct-answer-id="3">
+	 	<answer id="1">SMS transfers text while MMS transfers video, audio and pictures but could not transfer text</answer>
+	 	<answer id="2">SMS is GSM network service while MMS is only available in WiMAX networks</answer>
+	 	<answer id="3">MMS uses Internet for transferring the message to the recipient</answer>
+	 	<answer id="4">MMS messages are more frequently used than SMS messages</answer>
+	 </question>
+	 <!-- THE WORLD WIDE WEB SYSTEM -->
+	 <question category="The World Wide Web system" value="Which of the following could not be a task of a server machine?" correct-answer-id="3">
+	 	<answer id="1">Performing a Database Server</answer>
+	 	<answer id="2">Performing a File Server</answer>
+	 	<answer id="3">Performing more than one OS</answer>
+	 	<answer id="4">Visualizing an HTML content</answer>
+	 </question>
+	 <question category="The World Wide Web system" value="What is the markup language that is the standard for creation of web pages nowadays?" correct-answer-id="3">
+	 	<answer id="1">Java</answer>
+	 	<answer id="2">C#</answer>
+	 	<answer id="3">HTML</answer>
+	 	<answer id="4">CSS</answer>
+	 </question>
+	 <question category="The World Wide Web system" value="Which of the following is NOT a web browser?" correct-answer-id="4">
+	 	<answer id="1">Google Chrome</answer>
+	 	<answer id="2">Apple Safari</answer>
+	 	<answer id="3">Opera</answer>
+	 	<answer id="4">Mozilla Thunderbird</answer>
+	 </question>
+	 <question category="The World Wide Web system" value="Which of the following is NOT a valid URL protocol, which is included in the protocol://domain_name/path_to_file URI scheme?" correct-answer-id="4">
+	 	<answer id="1">http</answer>
+	 	<answer id="2">mailto</answer>
+	 	<answer id="3">ftp</answer>
+	 	<answer id="4">music</answer>
+	 </question>
+	 <question category="The World Wide Web system" value="What is the main responsibility of the HTTP protocol in the WWW?" correct-answer-id="1">
+	 	<answer id="1">Exchange and transfer hypertext over the Internet</answer>
+	 	<answer id="2">Upload and transfer files</answer>
+	 	<answer id="3">Access local files on the client’s machine</answer>
+	 	<answer id="4">Play multimedia, such as audio and video, on the web</answer>
+	 </question>
+	 <question category="The World Wide Web system" value="Which of the following types of data does a web cookie contain?" correct-answer-id="3">
+	 	<answer id="1">Images</answer>
+	 	<answer id="2">Video</answer>
+	 	<answer id="3">Text</answer>
+	 	<answer id="4">Audio</answer>
+	 </question>
+	 <!-- 	WEBSITE DEVELOPMENT -->
+	 <question category="Website development" value="Which of the following in HTML5 is not an example of semantic elements?" correct-answer-id="3">
+	 	<answer id="1">aside</answer>
+	 	<answer id="2">mark</answer>
+	 	<answer id="3">head</answer>
+	 	<answer id="4">nav</answer>
+	 </question>
+	 <question category="Website development" value="Which of the following is the main heading?" correct-answer-id="1">
+	 	<answer id="1">h1</answer>
+	 	<answer id="2">h2</answer>
+	 	<answer id="3">h3</answer>
+	 	<answer id="4">h8</answer>
+	 </question>
+	 <question category="Website development" value="Which of the following is an inline element?" correct-answer-id="3">
+	 	<answer id="1">div</answer>
+	 	<answer id="2">form</answer>
+	 	<answer id="3">span</answer>
+	 	<answer id="4">header</answer>
+	 </question>
+	 <question category="Website development" value="Which input type=”” will display entered text as asterisks?" correct-answer-id="2">
+	 	<answer id="1">input type=”asterisk”</answer>
+	 	<answer id="2">input type=”password”</answer>
+	 	<answer id="3">input type=”hidden”</answer>
+	 	<answer id="4">input type=”obscured”</answer>
+	 </question>
+	 <question category="Website development" value="How do we tell the browser where to look for an external CSS file?" correct-answer-id="2">
+	 	<answer id="1">We give the location in a &lt;style&gt; tag which is in the &lt;head&gt; element</answer>
+	 	<answer id="2">We give the location in with a &lt;link" tag which is in the &lt;head&gt; element</answer>
+	 	<answer id="3">As long as the CSS file is in the same folder as the HTML file, the browser will find it automatically</answer>
+	 	<answer id="4">None of the above is correct</answer>
+	 </question>
+	 <question category="Website development" value="Which of the following are common functions of a CMS (Content Management System) application?" correct-answer-id="4">
+	 	<answer id="1">Content management</answer>
+	 	<answer id="2">Revision control</answer>
+	 	<answer id="3">Publishing of content</answer>
+	 	<answer id="4">All of the above</answer>
+	 </question>
+	 <!-- SCRIPTING LANGUAGES AND DATABASE -->
+	 <question category="Scripting languages and database" value="Which are the four basic SQL statements?" correct-answer-id="1">
+	 	<answer id="1">SELECT, INSERT, UPDATE, DELETE</answer>
+	 	<answer id="2">If, For, While, Switch</answer>
+	 	<answer id="3">Then, Else, GOTO, Break</answer>
+	 	<answer id="4">PISHI, NA, BALGARSKI</answer>
+	 </question>
+	 <question category="Scripting languages and database" value="Which of the following are scripting programming languages for web development?" correct-answer-id="3">
+	 	<answer id="1">Objective-C, SQL, JSON, XML</answer>
+	 	<answer id="2">LISP, FORTRAN, COBOL, PASCAL</answer>
+	 	<answer id="3">JavaScript, PHP, Python, Ruby</answer>
+	 	<answer id="4">C++, Java, C#, Delphi</answer>
+	 </question>
+	 <question category="Scripting languages and database" value="What is TRUE about the difference between scripting and compiled programming languages?" correct-answer-id="2">
+	 	<answer id="1">The code of the compiled languages is executed slower than the code of the scripting languages</answer>
+	 	<answer id="2">The code of the compiled languages is converted into machine code and is later directly executed by the microprocessor. The code of the scripting languages is always interpreted and executed on the fly</answer>
+	 	<answer id="3">The scripting languages are older than the compiled languages</answer>
+	 	<answer id="4">There’s no difference</answer>
+	 </question>
+	 <question category="Scripting languages and database" value="What is the difference between the client side and the server side languages?" correct-answer-id="4">
+	 	<answer id="1">There is no difference</answer>
+	 	<answer id="2">The code of the client side languages is responsible for the main application logic and runs on the user's machine. The code of the server side languages is used mainly for user interface and runs on the server</answer>
+	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the user’s machine</answer>
+	 	<answer id="4">The code of the client side languages is used mainly for user interface and runs on the user's machine. The code of the server side languages is responsible for the main application logic and runs on the server</answer>
+	 </question>
+</questions>
