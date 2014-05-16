@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questions>
-	<!-- 
 	<question category="Обща култура" correct-answer-id="1" 
 		value="Кой е създателят на първия електронен дигитален компютър?">
 		<answer id="1">Джон Атанасов</answer>
@@ -8,7 +7,6 @@
 		<answer id="3">Стийв Джобс</answer>
 		<answer id="4">Бил Гейтс</answer>
 	</question>
-	 -->
 	 <question category="TODO-INPUT" value="TODO-INPUT" correct-answer-id="TODO-INPUT">
 	 	<answer id="1">TODO-INPUT</answer>
 	 	<answer id="2">TODO-INPUT</answer>
