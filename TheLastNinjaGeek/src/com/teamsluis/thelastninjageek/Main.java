@@ -60,12 +60,7 @@ public class Main {
 		buttons[2].setBounds(70, 490, 300, 60);
 		buttons[3].setBounds(420, 490, 300, 60);
 		
-		  try
-	        {
-			 buttons[1] .setCursor(Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("18762.png").getImage(),new Point(0,0),"custom cursor"));
-	        }catch(Exception e){}
-		  buttons[1].setVisible(true);
-        
+	
 	    }
 
 	public static void main(String[] args) {
