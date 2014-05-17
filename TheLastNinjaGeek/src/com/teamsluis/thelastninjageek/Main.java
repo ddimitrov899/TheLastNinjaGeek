@@ -2,12 +2,12 @@ package com.teamsluis.thelastninjageek;
 
 import java.awt.*;
 import java.awt.event.*;
-
 import javax.swing.*;
 
 public class Main {
 	int choice = 0;
 	public static JFrame gameWindow;
+
 
 	public void createGameWindow() {
 
@@ -41,7 +41,6 @@ public class Main {
 				KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "enter");
 		menuList[1].getInputMap().put(
 				KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "down");
-
 		menuList[1].getActionMap().put("up", new AbstractAction() {
 			/**
 			 * 
@@ -86,10 +85,16 @@ public class Main {
 				if (choice == 0) {
 					Game.gameComencing();
 				}
-				for (int i = 0; i < menuList.length; i++) {
-					menuList[i].setVisible(false);
+				else if (choice == 1){
+					Options.OptionsPanel();
 				}
-				System.out.println("Entering new game state..");
+					else if (choice == 2){
+						WindowEvent wEv = new WindowEvent(gameWindow,WindowEvent.WINDOW_CLOSING);
+		                Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(wEv);
+					}	
+				for (int i = 0; i < menuList.length; i++) {
+				menuList[i].setVisible(false);
+				}
 			}
 		});
 	}
