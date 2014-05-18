@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+	<question category="Обща култура" correct-answer-id="1" 
+		value="Кой е създателят на първия електронен дигитален компютър?">
+		<answer id="1">Джон Атанасов</answer>
+		<answer id="2">Чарлз Бабидж</answer>
+		<answer id="3">Стийв Джобс</answer>
+		<answer id="4">Бил Гейтс</answer>
+	</question>
+	 <question category="Pascal" value="Низ наричаме крайна последователност от?" correct-answer-id="2">
+	 	<answer id="1">Числа</answer>
+	 	<answer id="2">Символи</answer>
+	 	<answer id="3">Малки и голями латински букви</answer>
+	 	<answer id="4">Малки и голями букви на кирилица</answer>
+	 </question>
+	 <question category="Pascal" value="В низа name, зададен като :String;,могат да се въведът максимално:" correct-answer-id="2">
+	 	<answer id="1">256 символа</answer>
+	 	<answer id="2">255 символа</answer>
+	 	<answer id="3">0 символа, защото не е указана дължината на низа</answer>
+	 	<answer id="4">няма ограничение в броя на низовете</answer>
+	 </question>
+	 <question category="Pascal" value="Ако е деклариран низ str:String[10];,то вярна инициализация е?" correct-answer-id="4">
+	 	<answer id="1">str[10]:='hello'</answer>
+	 	<answer id="2">str:="hello"</answer>
+	 	<answer id="3">str[5]:='hello'</answer>
+	 	<answer id="4">str:='hello'</answer>
+	 </question>
+	 <question category="Pascal" value="Въвеждане и извеждане на низ с име str може да стане?" correct-answer-id="4">
+	 	<answer id="1">чрез операторите Read(str); и Write(str);</answer>
+	 	<answer id="2">чрез цикал в който са включени операторите Read(str[i]); и Write (str[i])</answer>
+	 	<answer id="3">чрез операторите ReadLn(str); и WriteLn(str);</answer>
+	 	<answer id="4">по всеки един от изброените начини</answer>
+	 </question>
+	 <question category="Pascal" value="Недопустим оператор за низа , деклариран като str:String[10] e?" correct-answer-id="1">
+	 	<answer id="1">str[4]:='Ivan'</answer>
+	 	<answer id="2">ReadLn(str)</answer>
+	 	<answer id="3">str[1]:='I'</answer>
+	 	<answer id="4">str[2]:=Chr(97)</answer>
+	 </question>
+	 <question category="Pascal" value="Каква е стойноста 'c'след изпълнение на програмата
+		Var S:String[10];
+		    i, c:Integer;
+		Begin
+		  S:='cc306ccsd';
+		  For i:=1 to Lenght(s) do
+		  If S:[i]='c' Then c:= c + 1
+		  End.;" correct-answer-id="4">
+	 	<answer id="1">0</answer>
+	 	<answer id="2">6</answer>
+	 	<answer id="3">2</answer>
+	 	<answer id="4">4</answer>
+	 </question>
+	 <question category="Pascal" value="Структорния тип данни Record представлява последователност от елементи, които:" correct-answer-id="4">
+	 	<answer id="1">задължително са еднотипни</answer>
+	 	<answer id="2">задължително са низове</answer>
+	 	<answer id="3">задължително са числови променливи</answer>
+	 	<answer id="4">могат да бъдат и разнотипни</answer>
+	 </question>
+	 <question category="Pascal" value="В паметта се заделя място, когато:" correct-answer-id="2">
+	 	<answer id="1">се дефинира тип запис</answer>
+	 	<answer id="2">се декларира променлива от тип запис</answer>
+	 	<answer id="3">се присвояват стойности в полетата на променлива от тип запис </answer>
+	 	<answer id="4">друг отговор от опоменатите</answer>
+	 </question>
+	 <question category="Pascal" value="Възможно ли е някое от полетата на тип Record да е също от тип рекорд" correct-answer-id="3">
+	 	<answer id="1">да, ако записът е само с еднотипни полета</answer>
+	 	<answer id="2">да, но задължително да е първото поле</answer>
+	 	<answer id="3">да, възможно е</answer>
+	 	<answer id="4">не, не е възможно</answer>
+	 </question>
+	 <question category="Pascal" value="Полетата на запис се представят в ОП" correct-answer-id="1">
+	 	<answer id="1">последователно според реда, в който са обявени</answer>
+	 	<answer id="2">последователност без значение на реда,в който са обявени</answer>
+	 	<answer id="3">на произволни места в паметта</answer>
+	 	<answer id="4">друг отговор от опоменатите</answer>
+	 </question>
+	 <question category="Pascal" value="След изпълнението на оператора Assign(F,'test.txt'); се извършва:" correct-answer-id="2">
+	 	<answer id="1">свързване с вътрешен фаел text.txt с външен файл F</answer>
+	 	<answer id="2">свързаване с вътрешен фаел F с външен файл text.txt</answer>
+	 	<answer id="3">отваря външния файл text.txt</answer>
+	 	<answer id="4">отваря вътрешен файл F</answer>
+	 </question>
+</questions>
