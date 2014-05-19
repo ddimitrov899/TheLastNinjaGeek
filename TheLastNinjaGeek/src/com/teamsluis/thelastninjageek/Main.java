@@ -29,7 +29,7 @@ public class Main {
 	    oldPane = gameWindow.getContentPane();
 		
 		// Images --		
-
+              // This(and the one in options) is set to my local file path to get it working change it with yours 
 	    ImageIcon picLabel = new ImageIcon("/home/shade/git/TheLastNinjaGeek/TheLastNinjaGeek/resources/data/ninja.jpg");
 					
    
