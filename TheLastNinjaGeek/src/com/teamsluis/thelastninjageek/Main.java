@@ -48,8 +48,7 @@ public class Main {
 		// Images --
 		// This(and the one in options) is set to my local file path to get it
 		// working change it with yours
-		ImageIcon picLabel = new ImageIcon(
-				"/home/shade/git/TheLastNinjaGeek/TheLastNinjaGeek/resources/images/ninja.jpg");
+		ImageIcon picLabel = new ImageIcon("resources/images/ninja.jpg");
 
 		newPane.setIcon(picLabel);
 		gameWindow.setContentPane(newPane);

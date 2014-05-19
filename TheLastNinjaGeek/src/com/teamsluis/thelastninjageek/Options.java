@@ -18,7 +18,7 @@ public static ImageIcon bg;
 	public static void optionsPanel() {
 		
         JLabel jl = new JLabel();
-		bg = new ImageIcon("/home/shade/git/TheLastNinjaGeek/TheLastNinjaGeek/resources/images/backgrpOP.png");
+		bg = new ImageIcon("resources/images/backgrpOP.png");
 	    jl.setIcon(bg);
 	    jl.setIconTextGap(-800);
 	    jl.setOpaque(true);
