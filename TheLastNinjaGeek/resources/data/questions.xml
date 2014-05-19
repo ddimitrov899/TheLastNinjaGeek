@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questions>
-	<!-- 
-	<question category="Обща култура" correct-answer-id="1" 
-		value="Кой е създателят на първия електронен дигитален компютър?">
-		<answer id="1">Джон Атанасов</answer>
-		<answer id="2">Чарлз Бабидж</answer>
-		<answer id="3">Стийв Джобс</answer>
-		<answer id="4">Бил Гейтс</answer>
-	</question>
-	 -->	 
 	 <!-- COPMUTER SYSTEMS -->
 	 <question category="Computer systems" value="Which of the following is not a Single-board Computer" correct-answer-id="2">
 	 	<answer id="1">Raspberry Pi</answer>
@@ -114,14 +105,14 @@
 	 	<answer id="3">AVG PC TuneUp</answer>
 	 	<answer id="4">ESET Gateway Security</answer>
 	 </question>
-	 <question category="Handling computer systems and programs" value="What issue should be troubleshooted when вЂњNon-system disk or disk errorвЂќ message appears during
+	 <question category="Handling computer systems and programs" value="What issue should be troubleshooted when “Non-system disk or disk error” message appears during
 computer boot process?" correct-answer-id="1">
 	 	<answer id="1">The computer failed to locate a boot sector with an operating system installed</answer>
 	 	<answer id="2">A video card driver cannot be found</answer>
 	 	<answer id="3">The CPU is overheated</answer>
 	 	<answer id="4">A memory size error</answer>
 	 </question>
-	 <question category="Handling computer systems and programs" value="Which of the following can be used in Windows systems to start the print spooler from the command prompt? SPOOL is вЂћsimultaneous peripheral operations on-lineвЂњ" correct-answer-id="2">
+	 <question category="Handling computer systems and programs" value="Which of the following can be used in Windows systems to start the print spooler from the command prompt? SPOOL is „simultaneous peripheral operations on-line“" correct-answer-id="2">
 	 	<answer id="1">Start/Spooler</answer>
 	 	<answer id="2">Net start spooler</answer>
 	 	<answer id="3">Spooler.exe start</answer>
@@ -183,8 +174,8 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="3">Windows</answer>
 	 	<answer id="4">Unix</answer>
 	 </question>
-	 <question category="Operating systems" value="What does the term 'kernel' mean?" correct-answer-id="3">
-	 	<answer id="1">File system used by Apple's OS X operating system</answer>
+	 <question category="Operating systems" value="What does the term “kernel” mean?" correct-answer-id="3">
+	 	<answer id="1">File system used by Apple’s OS X operating system</answer>
 	 	<answer id="2">Computer hardware device that manages the input/output interactions with the user</answer>
 	 	<answer id="3">Computer program that manages the input/output requests of software and translates them to specific instructions for the processor and other components of the computer system</answer>
 	 	<answer id="4">Computer program which comes with some operating systems and is used to record logs of all the
@@ -210,86 +201,86 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="4">Generate Utilize Interact</answer>
 	 </question>	 
 	 <!-- COMPRESSING AND DECOMPRESSING -->
-	 <question category="Compressing and Decompressing" value="Which of the following commands or formats for compressing and archiving in the Linux OS and UNIX is NOT supported by default?" correct-answer-id="4">
+	 <question category="Compressing and decompressing" value="Which of the following commands or formats for compressing and archiving in the Linux OS and UNIX is NOT supported by default?" correct-answer-id="4">
 	 	<answer id="1">gzip</answer>
 	 	<answer id="2">bzip2</answer>
 	 	<answer id="3">tar</answer>
 	 	<answer id="4">rar</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="Which compression algorithm uses discrete cosine transformation - DCT?" correct-answer-id="3">
+	 <question category="Compressing and decompressing" value="Which compression algorithm uses discrete cosine transformation - DCT?" correct-answer-id="3">
 	 	<answer id="1">Huffman</answer>
 	 	<answer id="2">Lampel-Ziv</answer>
 	 	<answer id="3">JPEG</answer>
 	 	<answer id="4">LZW</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="In which file format compression over the original data was not applied?" correct-answer-id="1">
+	 <question category="Compressing and decompressing" value="In which file format compression over the original data was not applied?" correct-answer-id="1">
 	 	<answer id="1">.bmp</answer>
 	 	<answer id="2">.jpg</answer>
 	 	<answer id="3">.png</answer>
 	 	<answer id="4">.zip</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="Which of the following is NOT true?" correct-answer-id="3">
+	 <question category="Compressing and decompressing" value="Which of the following is NOT true?" correct-answer-id="3">
 	 	<answer id="1">Lossy data compression could not be used on text files</answer>
 	 	<answer id="2">In lossless compression after the decompression the size of the data is the same as the original</answer>
 	 	<answer id="3">Multimedia data files (audio, video, images) are always compressed by lossy data compression</answer>
 	 	<answer id="4">In lossless compression after the decompression the size of the data is the same as the original</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="Which of the following is NOT file extension for files that contain compressed data?" correct-answer-id="2">
+	 <question category="Compressing and decompressing" value="Which of the following is NOT file extension for files that contain compressed data?" correct-answer-id="2">
 	 	<answer id="1">.7z</answer>
 	 	<answer id="2">.cs</answer>
 	 	<answer id="3">.tar</answer>
 	 	<answer id="4">.gz</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="Which of the following statements about symmetrical and asymmetrical compression algorithms is NOT true?" correct-answer-id="4">
+	 <question category="Compressing and decompressing" value="Which of the following statements about symmetrical and asymmetrical compression algorithms is NOT true?" correct-answer-id="4">
 	 	<answer id="1">Symmetry and asymmetry, in the context of data compression, refers to the time relation between compression and decompression</answer>
 	 	<answer id="2">Symmetric algorithms are used for media streaming (for example Internet TV) because the longer time for compression in the server or decompression in the client would lead to delays in the viewing of the data</answer>
 	 	<answer id="3">Asymmetrical algorithms with faster compression than decompression are used for backing up or archiving data, as in these cases data is more often stored rather than retrieved</answer>
 	 	<answer id="4">All are true</answer>
 	 </question>
-	 <question category="Compressing and Decompressing" value="Which of the following is NOT lossless compression algorithm?" correct-answer-id="3">
+	 <question category="Compressing and decompressing" value="Which of the following is NOT lossless compression algorithm?" correct-answer-id="3">
 	 	<answer id="1">Shannon-Fano coding</answer>
 	 	<answer id="2">Huffman coding</answer>
 	 	<answer id="3">Discrete cosine transformation</answer>
 	 	<answer id="4">Run-length encoding</answer>
 	 </question>
 	 <!-- COMPUTER TEXT PROCESSING -->
-	 <question category="Computer Text Processing" value="Which of the following is true for Linked object and Embedded object in Microsoft Word?" correct-answer-id="3">
+	 <question category="Computer text processing" value="Which of the following is true for Linked object and Embedded object in Microsoft Word?" correct-answer-id="3">
 	 	<answer id="1">They mean the same thing</answer>
 	 	<answer id="2">The Embedded object becomes a part of the Word file and increases the file size</answer>
 	 	<answer id="3">The Linked object represents a hyperlink to website</answer>
 	 	<answer id="4">When an object is Embedded and if we change it source, the Embedded object changes itself too</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="What is the correct term for unreadable characters representation of software that does not recognize the corresponding encoding of the text?" correct-answer-id="4">
+	 <question category="Computer text processing" value="What is the correct term for unreadable characters representation of software that does not recognize the corresponding encoding of the text?" correct-answer-id="4">
 	 	<answer id="1">Integration hell</answer>
 	 	<answer id="2">Unicode</answer>
 	 	<answer id="3">Monkeyness</answer>
 	 	<answer id="4">Mojibake</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="Which of the following file formats does NOT support other text formatting besides font size and font style?" correct-answer-id="3">
+	 <question category="Computer text processing" value="Which of the following file formats does NOT support other text formatting besides font size and font style?" correct-answer-id="3">
 	 	<answer id="1">DOC</answer>
 	 	<answer id="2">RTF</answer>
 	 	<answer id="3">TXT</answer>
 	 	<answer id="4">ODT</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="Which of the following format is NOT a text file format?" correct-answer-id="2">
+	 <question category="Computer text processing" value="Which of the following format is NOT a text file format?" correct-answer-id="2">
 	 	<answer id="1">TXT</answer>
 	 	<answer id="2">PPT</answer>
 	 	<answer id="3">RTF</answer>
 	 	<answer id="4">DOC</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="Which of the following encodings can represent most of the scripts (i.e. Latin, Cyrillic, Greek etc.) used in the world?" correct-answer-id="3">
+	 <question category="Computer text processing" value="Which of the following encodings can represent most of the scripts (i.e. Latin, Cyrillic, Greek etc.) used in the world?" correct-answer-id="3">
 	 	<answer id="1">Windows-1251</answer>
 	 	<answer id="2">ASCII</answer>
 	 	<answer id="3">Unicode</answer>
 	 	<answer id="4">Windows-1255</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="Which of the following is NOT a word processor?" correct-answer-id="1">
+	 <question category="Computer text processing" value="Which of the following is NOT a word processor?" correct-answer-id="1">
 	 	<answer id="1">Apple Keynote</answer>
 	 	<answer id="2">Google Docs</answer>
 	 	<answer id="3">LibreOffice Writer</answer>
 	 	<answer id="4">WordPad</answer>
 	 </question>
-	 <question category="Computer Text Processing" value="Which of the following statements is TRUE?" correct-answer-id="2">
+	 <question category="Computer text processing" value="Which of the following statements is TRUE?" correct-answer-id="2">
 	 	<answer id="1">Google does NOT have a word processing application</answer>
 	 	<answer id="2">Computer files use different encodings to store and represent text</answer>
 	 	<answer id="3">A PDF file cannot contain images and tables, only text</answer>
@@ -361,7 +352,7 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="1">Software for web design</answer>
 	 	<answer id="2">Lossless compression algorithm</answer>
 	 	<answer id="3">Network protocol from the TCP/IP stack</answer>
-	 	<answer id="4">Software that assists in the creation, modification, analysis or optimization of a productвЂ™s design</answer>
+	 	<answer id="4">Software that assists in the creation, modification, analysis or optimization of a product’s design</answer>
 	 </question>
 	 <question category="Information systems" value="What is TRUE about the ERP systems?" correct-answer-id="1">
 	 	<answer id="1">Set of integrated enterprise software tools designed to facilitate the flow of information between all departments within a business and serve all their needs</answer>
@@ -391,7 +382,7 @@ interactions of the operating system and the application software</answer>
 	 <question category="Security and data protection" value="Which of the statements below is FALSE?" correct-answer-id="1">
 	 	<answer id="1">You can decrypt a message sent to someone if you have their public key</answer>
 	 	<answer id="2">RSA is an asymmetric method of encryption</answer>
-	 	<answer id="3">A DES symmetric key canвЂ™t be easily broken by a modern computer</answer>
+	 	<answer id="3">A DES symmetric key can’t be easily broken by a modern computer</answer>
 	 	<answer id="4">Asymmetric encryption is considered more secure than the symmetric encryption</answer>
 	 </question>
 	 <question category="Security and data protection" value="Which of the following is a widely used hashing algorithm?" correct-answer-id="1">
@@ -548,7 +539,7 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="3">4G uses mobile broadband to grant internet access</answer>
 	 	<answer id="4">ISDN provides internet access via coaxial cable</answer>
 	 </question>
-	 <question category="Internet" value="What is the correct URL address for the following example вЂњhomework word (doc) file that is located on a host with top level domain - com, second level domain learnit and third level domain homeworkвЂќ?" correct-answer-id="2">
+	 <question category="Internet" value="What is the correct URL address for the following example “homework word (doc) file that is located on a host with top level domain - com, second level domain learnit and third level domain homework”?" correct-answer-id="2">
 	 	<answer id="1">homework.doc.homework.learnit.com</answer>
 	 	<answer id="2">homework.learnit.com/homework.doc</answer>
 	 	<answer id="3">homework.com/learnit/homework.doc</answer>
@@ -598,37 +589,37 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="4">MMS messages are more frequently used than SMS messages</answer>
 	 </question>
 	 <!-- THE WORLD WIDE WEB SYSTEM -->
-	 <question category="The World Wide Web system" value="Which of the following could not be a task of a server machine?" correct-answer-id="3">
+	 <question category="The world wide web system" value="Which of the following could not be a task of a server machine?" correct-answer-id="3">
 	 	<answer id="1">Performing a Database Server</answer>
 	 	<answer id="2">Performing a File Server</answer>
 	 	<answer id="3">Performing more than one OS</answer>
 	 	<answer id="4">Visualizing an HTML content</answer>
 	 </question>
-	 <question category="The World Wide Web system" value="What is the markup language that is the standard for creation of web pages nowadays?" correct-answer-id="3">
+	 <question category="The world wide web system" value="What is the markup language that is the standard for creation of web pages nowadays?" correct-answer-id="3">
 	 	<answer id="1">Java</answer>
 	 	<answer id="2">C#</answer>
 	 	<answer id="3">HTML</answer>
 	 	<answer id="4">CSS</answer>
 	 </question>
-	 <question category="The World Wide Web system" value="Which of the following is NOT a web browser?" correct-answer-id="4">
+	 <question category="The world wide web system" value="Which of the following is NOT a web browser?" correct-answer-id="4">
 	 	<answer id="1">Google Chrome</answer>
 	 	<answer id="2">Apple Safari</answer>
 	 	<answer id="3">Opera</answer>
 	 	<answer id="4">Mozilla Thunderbird</answer>
 	 </question>
-	 <question category="The World Wide Web system" value="Which of the following is NOT a valid URL protocol, which is included in the protocol://domain_name/path_to_file URI scheme?" correct-answer-id="4">
+	 <question category="The world wide web system" value="Which of the following is NOT a valid URL protocol, which is included in the protocol://domain_name/path_to_file URI scheme?" correct-answer-id="4">
 	 	<answer id="1">http</answer>
 	 	<answer id="2">mailto</answer>
 	 	<answer id="3">ftp</answer>
 	 	<answer id="4">music</answer>
 	 </question>
-	 <question category="The World Wide Web system" value="What is the main responsibility of the HTTP protocol in the WWW?" correct-answer-id="1">
+	 <question category="The world wide web system" value="What is the main responsibility of the HTTP protocol in the WWW?" correct-answer-id="1">
 	 	<answer id="1">Exchange and transfer hypertext over the Internet</answer>
 	 	<answer id="2">Upload and transfer files</answer>
-	 	<answer id="3">Access local files on the clientвЂ™s machine</answer>
+	 	<answer id="3">Access local files on the client’s machine</answer>
 	 	<answer id="4">Play multimedia, such as audio and video, on the web</answer>
 	 </question>
-	 <question category="The World Wide Web system" value="Which of the following types of data does a web cookie contain?" correct-answer-id="3">
+	 <question category="The world wide web system" value="Which of the following types of data does a web cookie contain?" correct-answer-id="3">
 	 	<answer id="1">Images</answer>
 	 	<answer id="2">Video</answer>
 	 	<answer id="3">Text</answer>
@@ -653,11 +644,11 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="3">span</answer>
 	 	<answer id="4">header</answer>
 	 </question>
-	 <question category="Website development" value="Which input type=вЂќвЂќ will display entered text as asterisks?" correct-answer-id="2">
-	 	<answer id="1">input type=вЂќasteriskвЂќ</answer>
-	 	<answer id="2">input type=вЂќpasswordвЂќ</answer>
-	 	<answer id="3">input type=вЂќhiddenвЂќ</answer>
-	 	<answer id="4">input type=вЂќobscuredвЂќ</answer>
+	 <question category="Website development" value="Which input type=”” will display entered text as asterisks?" correct-answer-id="2">
+	 	<answer id="1">input type=”asterisk”</answer>
+	 	<answer id="2">input type=”password”</answer>
+	 	<answer id="3">input type=”hidden”</answer>
+	 	<answer id="4">input type=”obscured”</answer>
 	 </question>
 	 <question category="Website development" value="How do we tell the browser where to look for an external CSS file?" correct-answer-id="2">
 	 	<answer id="1">We give the location in a &lt;style&gt; tag which is in the &lt;head&gt; element</answer>
@@ -688,11 +679,12 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="1">The code of the compiled languages is executed slower than the code of the scripting languages</answer>
 	 	<answer id="2">The code of the compiled languages is converted into machine code and is later directly executed by the microprocessor. The code of the scripting languages is always interpreted and executed on the fly</answer>
 	 	<answer id="3">The scripting languages are older than the compiled languages</answer>
-	 	<answer id="4">ThereвЂ™s no difference</answer>
+	 	<answer id="4">There’s no difference</answer>
 	 </question>
 	 <question category="Scripting languages and database" value="What is the difference between the client side and the server side languages?" correct-answer-id="4">
 	 	<answer id="1">There is no difference</answer>
 	 	<answer id="2">The code of the client side languages is responsible for the main application logic and runs on the user's machine. The code of the server side languages is used mainly for user interface and runs on the server</answer>
-	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the userвЂ™s machine</answer>
+	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the user’s machine</answer>
 	 	<answer id="4">The code of the client side languages is used mainly for user interface and runs on the user's machine. The code of the server side languages is responsible for the main application logic and runs on the server</answer>
 	 </question>
+</questions>

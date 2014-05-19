@@ -78,7 +78,6 @@ public class Options {
 			public void stateChanged(ChangeEvent event) {
 				Data.ninjas = plNumbSl.getValue();
 				showPl.setText(Integer.toString(plNumbSl.getValue()));
-
 			}
 		});
 
