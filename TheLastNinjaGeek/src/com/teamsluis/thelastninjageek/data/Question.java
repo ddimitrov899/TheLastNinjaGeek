@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
+	public static final int TOTAL_ANSWERS = 4;
 	private String category;
 	private int correctAnswerId;
 	private String value;
@@ -45,13 +46,24 @@ public class Question {
 		return this.answers;
 	}
 
+	/*To do fix*/
 	public void setAnswers(List<Answer> answers) {
-		if (this.answers == null) {
-			answers = new ArrayList<Answer>();
+		this.answers = answers;
+	}
+	
+	public Answer getCorrectAnswer() {
+		Answer correctAnswer = null;
+		
+		for (Answer answer : this.answers) {
+			if (answer.getId() == this.correctAnswerId) {
+				return answer;
+			}
 		}
-
-		for (Answer answer : answers) {
-			this.answers.add(answer);
-		}
+		
+		return correctAnswer;
+	}
+	
+	public boolean isCorrect(Answer answer) {
+		return answer.getId() == correctAnswerId;
 	}
 }
