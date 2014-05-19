@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -29,6 +30,7 @@ public class CategoriesMenu {
 	
 	public static  void displayCategories() {
 		JPanel pan = new JPanel();
+		JLabel playerName = new JLabel();
 		pan.setLayout(new GridLayout(10, 2, 7, 7));
 		pan.setBounds(20, 100, 750, 420);
 		pan.setBackground(Color.black);
@@ -38,8 +40,7 @@ public class CategoriesMenu {
 		try {
 			someVar = DataPersister.loadCategoriesFromXmlFile(xmlLocation);
 			for (Map.Entry<String, java.util.List<Question>> entry : someVar
-					.entrySet()) {
-				
+					.entrySet()) {				
 				 String[] r = entry.getKey().split("(?=\\p{Upper})");
 				 JButton[] cat = new JButton[r.length];				 
 				for (int i = 0; i < cat.length; i++) {
@@ -48,23 +49,26 @@ public class CategoriesMenu {
 					pan.add(cat[i]);	
 					cat[i].setForeground(Color.WHITE);
 					cat[i].setBackground(Color.BLACK);
-					cat[i].setFont(new java.awt.Font("Times New Roman", 1, 14));
-						
+					cat[i].setFont(new java.awt.Font("Times New Roman", 1, 14));				
 					cat[i].addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {
 							Game.gameComencing();
 							pan.setVisible(false);
+							playerName.setVisible(false);
 						}
-					});
-					
+					});				
 				}
 			}
 		} catch (ParserConfigurationException | SAXException
 				| IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		}
-	
+		playerName.setText(Data.namePlayer[Data.currentPlayer]
+				+ " : " + Data.scorePlayer[Data.currentPlayer]);
+		playerName.setForeground(Color.RED);
+		playerName.setFont(new java.awt.Font("Times New Roman", 2, 20));	
+		playerName.setBounds(520,520,200,30);
+	   Main.gameWindow.add(playerName);
+		}	
 	}
 
