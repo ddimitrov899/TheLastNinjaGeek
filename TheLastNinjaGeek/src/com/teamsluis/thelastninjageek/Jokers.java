@@ -18,6 +18,7 @@ public class Jokers {
 				;
 				Main.gameWindow.add(jokersWindow[i]);
 			}
+
 			// Round 1 jokers = 50/50,DoublePoints,Change Question
 			if (Data.currentRound == 1) {
 				if (Data.playerHasJoker[Data.currentPlayer] == 3) {
@@ -25,12 +26,14 @@ public class Jokers {
 						Data.currentPlayerJokers[Data.currentPlayer][i] = 1;
 					}
 				}
+
 				for (int i = 0; i < 3; i++) {
 					if (Data.currentPlayerJokers[Data.currentPlayer][i] == 1) {
 						jokersWindow[i].setEnabled(true);
 
 					}
 				}
+
 				jokersWindow[1].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						Data.scorePlayer[Data.currentPlayer]++;
@@ -51,6 +54,6 @@ public class Jokers {
 	}
 
 	public static void initJokers() {
-	Data.playerHasJoker[Data.currentPlayer] = 3; // fix me
+		Data.playerHasJoker[Data.currentPlayer] = 3; // fix me
 	}
 }

@@ -9,7 +9,6 @@ public class Game {
 	public static int questions = 0;
 	public static void gameComencing() {
 
-		
 		JTextArea questionsWindow = new JTextArea();
 		questionsWindow.setBounds(70, 100, 655, 260);
 		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
@@ -46,14 +45,12 @@ public class Game {
 						questions = 0;
 						if (Data.ninjas > 1) {
 							// SHOW MENY QUESTIONS THEMES
-						}
-						
+						}		
 					}
-        
-					}				
-					
+				}
 			});
 		}
+		
 		buttons[0].setBounds(70, 410, 300, 60); // X, Y, Width,Height format;
 		buttons[1].setBounds(420, 410, 300, 60);
 		buttons[2].setBounds(70, 490, 300, 60);
@@ -61,6 +58,5 @@ public class Game {
 		questionsWindow.setVisible(true);
 		Jokers.showJokers();
 		// Show JokerWindow keyBinding
-
 	}
 }

@@ -14,23 +14,21 @@ import javax.swing.event.ChangeListener;
 
 public class Options {
 
-public static ImageIcon bg;
+	public static ImageIcon bg;
+
 	public static void optionsPanel() {
-		
-        JLabel jl = new JLabel();
+
+		JLabel jl = new JLabel();
 		bg = new ImageIcon("resources/images/backgrpOP.png");
-	    jl.setIcon(bg);
-	    jl.setIconTextGap(-800);
-	    jl.setOpaque(true);
-	    jl.setSize(800,600);
-	   
-	   
+		jl.setIcon(bg);
+		jl.setIconTextGap(-800);
+		jl.setOpaque(true);
+		jl.setSize(800, 600);
 
 		// Labels init
 		JLabel players = new JLabel("Set number of players");
 		JLabel jockers = new JLabel("Allow jockers");
 		JLabel showPl = new JLabel("1");
-
 
 		players.setFont(new java.awt.Font("Times New Roman", 1, 16));
 		jockers.setFont(new java.awt.Font("Times New Roman", 1, 16));
@@ -63,6 +61,7 @@ public static ImageIcon bg;
 		cancel.setBounds(450, 480, 180, 50);
 		Container[] all = { jl, players, jockers, showPl, cancel, apply,
 				allowJkr, plNumbSl };
+		
 		for (int i = 0; i < all.length; i++) {
 			all[i].setForeground(Color.WHITE);
 			all[i].setBackground(Color.BLACK);
@@ -72,47 +71,56 @@ public static ImageIcon bg;
 		plNumbSl.setValue(Data.ninjas);
 		plNumbSl.setMinimum(1);
 		plNumbSl.setMaximum(4);
-		 int oldVal = Data.ninjas;
+		int oldVal = Data.ninjas;
 		showPl.setText(Integer.toString(Data.ninjas));
-		
+
 		plNumbSl.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent event) {
 				Data.ninjas = plNumbSl.getValue();
 				showPl.setText(Integer.toString(plNumbSl.getValue()));
-				
+
 			}
 		});
+
 		// Button Actions
 		cancel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				for (int i = 0; i < all.length; i++) {
 					all[i].setVisible(false);
 				}
-				Data.ninjas =  oldVal;
+
+				Data.ninjas = oldVal;
 				plNumbSl.setValue(Data.ninjas);
 				Main.gameWindow.setContentPane(Main.newPane);
 				Main.displayMenu();
 				System.out.println("Going to Main");
 			}
 		});
+
 		apply.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				for (int i = 0; i < all.length; i++) {
 					all[i].setVisible(false);
 				}
+
 				Data.setNinja();
 				Main.gameWindow.setContentPane(Main.newPane);
 				Main.displayMenu();
-				if(allowJkr.isSelected() == true) {
+
+				if (allowJkr.isSelected() == true) {
 					Data.jokersAllowed = true;
-					System.out.printf("Players set to %d!\nJokers are allowed!\nGoing to Main..",Data.ninjas);
-				}
-				else {
+					System.out
+							.printf("Players set to %d!%nJokers are allowed!%nGoing to Main..",
+									Data.ninjas);
+				} else {
 					Data.jokersAllowed = false;
-					System.out.printf("Players set to %d!\nJokers are NOT allowed!\nGoing to Main..",Data.ninjas);
-				}			
+					System.out
+							.printf("Players set to %d!%nJokers are NOT allowed!%nGoing to Main..",
+									Data.ninjas);
+				}
 			}
 		});
-		 Main.gameWindow.add(jl);
+
+		Main.gameWindow.add(jl);
 	}
 }

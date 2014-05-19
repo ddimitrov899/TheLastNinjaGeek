@@ -16,7 +16,7 @@ public class Multyplayer {
 	public static void displayMulty() {
 
 		SpringLayout layout = new SpringLayout();
-		Container contentPane =  Main.gameWindow.getContentPane();
+		Container contentPane = Main.gameWindow.getContentPane();
 		contentPane.setLayout(layout);
 		contentPane.setBackground(Color.black);
 		JTextField[] inName = new JTextField[Data.ninjas];
@@ -55,11 +55,11 @@ public class Multyplayer {
 				for (int i = 0; i < playersT.length; i++) {
 					Data.namePlayer[i] = inName[i].getText();
 					inName[i].setVisible(false);
-					playersT[i].setVisible(false);							
+					playersT[i].setVisible(false);
 				}
-				applyBut.setVisible(false);		
-			Main.gameWindow.setContentPane(Main.oldPane);
-			Main.gameWindow.setLayout(null);
+				applyBut.setVisible(false);
+				Main.gameWindow.setContentPane(Main.oldPane);
+				Main.gameWindow.setLayout(null);
 				CategoriesMenu.displayCategories();
 			}
 		});
