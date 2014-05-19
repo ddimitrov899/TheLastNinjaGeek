@@ -49,7 +49,7 @@ public class Question {
 		if (this.answers == null) {
 			answers = new ArrayList<Answer>();
 		}
-		
+
 		for (Answer answer : answers) {
 			this.answers.add(answer);
 		}

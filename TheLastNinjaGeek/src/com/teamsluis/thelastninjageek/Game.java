@@ -2,14 +2,14 @@ package com.teamsluis.thelastninjageek;
 
 import java.awt.*;
 import java.awt.event.*;
+
 import javax.swing.*;
 
 public class Game {
-
+	public static int questions = 0;
 	public static void gameComencing() {
 
-		// JPanel menu = new JPanel();
-		// menu.setSize(800,600);
+		
 		JTextArea questionsWindow = new JTextArea();
 		questionsWindow.setBounds(70, 100, 655, 260);
 		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
@@ -17,9 +17,8 @@ public class Game {
 		questionsWindow.setWrapStyleWord(true);
 		questionsWindow.setText("Insert  XML questions  here");
 		questionsWindow.setEditable(false);
-		// Main.gameWindow.add(menu);
 		Main.gameWindow.add(questionsWindow);
-
+        
 		// Labels
 		JLabel playerName = new JLabel("<html><font color=red>"
 				+ Data.namePlayer[0] + "</font></html>");
@@ -38,18 +37,30 @@ public class Game {
 			Main.gameWindow.add(buttons[i]); // here
 
 			buttons[i].addActionListener(new ActionListener() {
-
 				public void actionPerformed(ActionEvent e) {
-
-					playerScore.setText(" : "
-							+ Integer.toString(Data.scorePlayer[0] += 1));
-				}
+					if (questions < 5){
+						playerScore.setText(" : "+ Integer.toString(Data.scorePlayer[0] += 1));			
+					      questions++;
+					}
+					else {
+						questions = 0;
+						if (Data.ninjas > 1) {
+							// SHOW MENY QUESTIONS THEMES
+						}
+						
+					}
+        
+					}				
+					
 			});
 		}
 		buttons[0].setBounds(70, 410, 300, 60); // X, Y, Width,Height format;
 		buttons[1].setBounds(420, 410, 300, 60);
 		buttons[2].setBounds(70, 490, 300, 60);
 		buttons[3].setBounds(420, 490, 300, 60);
-		// menu.setVisible(true);
+		questionsWindow.setVisible(true);
+		Jokers.showJokers();
+		// Show JokerWindow keyBinding
+
 	}
 }

@@ -2,13 +2,20 @@ package com.teamsluis.thelastninjageek;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class Main {
-	int choice = 0;
+	public static int choice = 0;
+	
+	public static JLabel opPic = new JLabel();
 	public static JFrame gameWindow;
-
-
+	public static 	Container oldPane = new Container();
+    public static JLabel newPane = new JLabel();
 	public void createGameWindow() {
 
 		// Create and display window frames.
@@ -19,93 +26,101 @@ public class Main {
 		gameWindow.setResizable(false); // just for now
 		gameWindow.pack();
 		gameWindow.setVisible(true);
-		// List
-		JLabel[] menuList = new JLabel[3];
-		String[] bName = { "   START", " OPTIONS", "    EXIT" };
-		int gap = 370;
-		for (int i = 0; i < menuList.length; i++) {
-			menuList[i] = new JLabel();
-			menuList[i].setFont(new java.awt.Font("Tahoma", 2, 18));
-			menuList[i].setText(bName[i]);
-			menuList[i].setBounds(340, gap, 100, 20);
-			menuList[i].setOpaque(true);
-			gameWindow.add(menuList[i]);
-			gap += 40;
-		}
-		// Key EVENTS
-		final Color bkgr = menuList[1].getBackground();
-		menuList[0].setBackground(Color.RED);
-		menuList[1].getInputMap().put(
-				KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0), "up");
-		menuList[1].getInputMap().put(
-				KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "enter");
-		menuList[1].getInputMap().put(
-				KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "down");
-		menuList[1].getActionMap().put("up", new AbstractAction() {
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
+	    oldPane = gameWindow.getContentPane();
+		
+		// Images --		
 
-			@Override
+	    ImageIcon picLabel = new ImageIcon("/home/shade/git/TheLastNinjaGeek/TheLastNinjaGeek/resources/data/ninja.jpg");
+					
+   
+        newPane.setIcon(picLabel);
+	    gameWindow.setContentPane(newPane);		
+	}
+
+		public static void displayMenu() {
+			 newPane.requestFocus(false);
+			// List
+			String[] bName = { "SINGLE PLAYER", " MULTY PLAYER",
+					"     OPTIONS","       RULES", "        EXIT" };
+			 JLabel[] menuList = new JLabel[bName.length];
+			int gap = 340;
+			for (int i = 0; i < menuList.length; i++) {
+				menuList[i] = new JLabel();
+				menuList[i].setFont(new java.awt.Font("Tahoma", 0, 18));
+				menuList[i].setText(bName[i]);
+				menuList[i].setBounds(330, gap, 145, 30);
+				menuList[i].setOpaque(true);				
+				menuList[i].setBackground(Color.BLACK);
+				gameWindow.add(menuList[i]);			
+				gap += 40;
+			}
+
+		
+		// Key EVENTS
+		final Color bkgr = menuList[0].getBackground();
+		menuList[choice].setBackground(Color.white);
+		newPane.getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0), "up");
+		newPane.getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "enter");
+		newPane.getInputMap().put(
+				KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "down");
+		newPane.getActionMap().put("up", new AbstractAction() {
+
 			public void actionPerformed(ActionEvent e) {
 				menuList[choice].setBackground(bkgr);
 				choice--;
 				if (choice < 0) {
-					choice = 2;
+					choice = 4;
 				}
-				menuList[choice].setBackground(Color.red);
+				menuList[choice].setBackground(Color.white);
 			}
 		});
-		menuList[1].getActionMap().put("down", new AbstractAction() {
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
+		newPane.getActionMap().put("down", new AbstractAction() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				menuList[choice].setBackground(bkgr);
 				choice++;
-				if (choice > 2) {
+				if (choice > 4) {
 					choice = 0;
 				}
-				menuList[choice].setBackground(Color.red);
+				menuList[choice].setBackground(Color.white);
 			}
 		});
 
-		menuList[1].getActionMap().put("enter", new AbstractAction() {
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
+		newPane.getActionMap().put("enter", new AbstractAction() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
+				Data.setNinja();
+			gameWindow.setContentPane(oldPane);
+				
 				if (choice == 0) {
+					//CategoriesMenu.displayCategories();
 					Game.gameComencing();
+				} else if (choice == 1 && Data.ninjas > 1){
+					Multyplayer.displayMulty();
 				}
-				else if (choice == 1){
-					Options.OptionsPanel();
+				else if (choice == 2) {
+					Options.optionsPanel();
+				} else if (choice == 4) {
+					WindowEvent wEv = new WindowEvent(gameWindow,
+							WindowEvent.WINDOW_CLOSING);
+					Toolkit.getDefaultToolkit().getSystemEventQueue()
+							.postEvent(wEv);					
 				}
-					else if (choice == 2){
-						WindowEvent wEv = new WindowEvent(gameWindow,WindowEvent.WINDOW_CLOSING);
-		                Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(wEv);
-					}	
-				for (int i = 0; i < menuList.length; i++) {
-				menuList[i].setVisible(false);
-				}
-			}
-		});
-	}
 
-	public static void main(String[] args) {
-
-		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				Main main = new Main();
-				main.createGameWindow();
 			}
-		});
-	}
+		});	
+		}
+public static void main(String[] args) {
+
+	javax.swing.SwingUtilities.invokeLater(new Runnable() {
+		public void run() {
+			Main main = new Main();
+			main.createGameWindow();
+		    displayMenu();
+		}
+	});
 }
+}
+

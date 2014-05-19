@@ -14,13 +14,13 @@ import org.xml.sax.SAXException;
 public class DataPersister {
 	private final static String xmlLocation = "resources/data/questions.xml";
 
-	private static List<Question> loadQuestionsFromXmlFile() throws ParserConfigurationException,
-			SAXException, IOException {
+	private static List<Question> loadQuestionsFromXmlFile()
+			throws ParserConfigurationException, SAXException, IOException {
 		File fXmlFile = new File(xmlLocation);
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(fXmlFile);
-		
+
 		return null;
 	}
 }
