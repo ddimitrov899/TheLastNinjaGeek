@@ -3,12 +3,15 @@ package com.teamsluis.thelastninjageek.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.teamsluis.thelastninjageek.Randomizer;
+
 public class Question {
 	public static final int TOTAL_ANSWERS = 4;
 	private String category;
 	private int correctAnswerId;
 	private String value;
 	private List<Answer> answers;
+	private boolean isAsked;
 
 	public Question(String category, int correctAnswerId, String value,
 			List<Answer> answers) {
@@ -16,6 +19,7 @@ public class Question {
 		this.setCorrectAnswerId(correctAnswerId);
 		this.setValue(value);
 		this.setAnswers(answers);
+		this.isAsked = false;
 	}
 
 	public String getCategory() {
@@ -65,5 +69,17 @@ public class Question {
 	
 	public boolean isCorrect(Answer answer) {
 		return answer.getId() == correctAnswerId;
+	}
+
+	public void markAsAsked() {
+		this.isAsked = true;
+	}
+	
+	public boolean isAsked() {
+		return this.isAsked;
+	}
+
+	public void shuffleAnswers() {
+		Randomizer.shuffleList(this.answers);	
 	}
 }

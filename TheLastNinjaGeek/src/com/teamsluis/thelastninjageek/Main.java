@@ -31,6 +31,7 @@ public class Main {
 	public static Container oldPane = new Container();
 	public static JLabel newPane = new JLabel();
 	
+	private final static String xmlLocation = "resources/data/questions.xml";
 
 	public void createGameWindow() {
 
@@ -107,41 +108,60 @@ public class Main {
 
 			public void actionPerformed(ActionEvent e) {
 				Data.setNinja();
-			gameWindow.setContentPane(oldPane);
-				
+				gameWindow.setContentPane(oldPane);
+
 				if (choice == 0) {
-					if (Data.ninjas >1) {
-						System.out.printf("%nPlayers set to 1%nStarting Singleplayer...");
-						Data.ninjas = 1;
-					}
-					Game.gameComencing();			
-				} else if (choice == 1 ){
-					if (Data.ninjas < 2) {
-						System.out.printf("%nPlayers set to 2%nStarting Multyplayer...");
-						Data.ninjas = 2;
-					}
+					// CategoriesMenu.displayCategories();
+					Game.gameComencing();
+				} else if (choice == 1 && Data.ninjas > 1) {
 					Multyplayer.displayMulty();
-				}
-				else if (choice == 2) {
+				} else if (choice == 2) {
 					Options.optionsPanel();
 				} else if (choice == 4) {
 					WindowEvent wEv = new WindowEvent(gameWindow,
 							WindowEvent.WINDOW_CLOSING);
 					Toolkit.getDefaultToolkit().getSystemEventQueue()
-							.postEvent(wEv);					
+							.postEvent(wEv);
 				}
+
 			}
-		});	
-		}
-public static void main(String[] args) {
+		});
+	}
 
-	javax.swing.SwingUtilities.invokeLater(new Runnable() {
-		public void run() {
-			Main main = new Main();
-			main.createGameWindow();
-		    displayMenu();
-		}
-	});
-}
-}
+	public static void main(String[] args) {
 
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				Main main = new Main();
+				main.createGameWindow();
+				displayMenu();
+			}
+		});
+	}
+
+	private static void DataPersisterDemo() {
+		try {
+			Map<String, java.util.List<Question>> someVar = DataPersister.loadCategoriesFromXmlFile(xmlLocation);
+			
+			for (Map.Entry<String, java.util.List<Question>> entry : someVar
+					.entrySet()) {
+				System.out.println(entry.getKey());
+
+				for (Question question : entry.getValue()) {
+					System.out.println(question.getValue());
+
+					for (Answer answer : question.getAnswers()) {
+						System.out.println(answer.getId());
+						System.out.println(answer.getValue());
+					}
+				}
+
+				System.out.println("---------------------------");
+			}
+
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
