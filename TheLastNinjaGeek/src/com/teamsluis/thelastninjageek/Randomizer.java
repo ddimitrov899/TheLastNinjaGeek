@@ -1,7 +1,7 @@
 package com.teamsluis.thelastninjageek;
 
-import java.util.Random;
 import java.util.List;
+import java.util.Random;
 
 public class Randomizer<T> {
 	private static Random randomGenerator = new Random();
@@ -20,18 +20,15 @@ public class Randomizer<T> {
 	}
 
 	public static <T> void shuffleList(List<T> a) {
-		int n = a.size();
-		Random random = new Random();
-		random.nextInt();
-		for (int i = 0; i < n; i++) {
-			int change = i + random.nextInt(n - i);
-			swap(a, i, change);
+		for (int i = 0; i < a.size(); i++) {
+			int j = getRandomNumberInRange(0, a.size() - 1);
+			swap(a, i, j);
 		}
 	}
 
-	private static <T> void swap(List<T> a, int i, int change) {
+	private static <T> void swap(List<T> a, int i, int j) {
 		T swap = a.get(i);
-		a.set(i, a.get(change));
-		a.set(change, swap);
+		a.set(i, a.get(j)); 
+		a.set(j, swap); 
 	}
 }

@@ -4,6 +4,11 @@ public class Answer {
 	private int id;
 	private String value;
 
+	public Answer(Answer answer) {
+		this.setId(answer.id);
+		this.setValue(answer.value);
+	}
+	
 	public Answer(int id, String value) {
 		this.setId(id);
 		this.setValue(value);
@@ -23,5 +28,10 @@ public class Answer {
 
 	public void setValue(String value) {
 		this.value = value;
+	}
+	
+	@Override
+	public Object clone() {
+		return new Answer(this.id, this.value);
 	}
 }

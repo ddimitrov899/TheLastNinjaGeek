@@ -37,16 +37,16 @@ public class Game {
 
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-
+		question.shuffleAnswers();
+		
 		questionsWindow.setText(question.getValue());
 
 		setPlayer();
-
+		
 		// Create and set BUTTONS
 		JButton[] buttons = new JButton[4];
 		for (int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton();
-			question.shuffleAnswers();
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
 			
