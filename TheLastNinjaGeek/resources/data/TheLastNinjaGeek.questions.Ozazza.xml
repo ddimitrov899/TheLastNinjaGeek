@@ -87,7 +87,7 @@
 	 	<answer id="3">Inno Setup</answer>
 	 	<answer id="4">All of the above</answer>
 	 </question>
-	 <question category="Handling computer systems and programs" value="Which of the following is least likely to lead to an evidently slowdown in the computerized system and the drivers works fine?" correct-answer-id="3">
+	 <question category="Handling computer systems and programs" value="Which of the following is least likely to lead to an evidently slowdown in the computerized system if the drivers works fine?" correct-answer-id="3">
 	 	<answer id="1">100% CPU load</answer>
 	 	<answer id="2">100% load on the hard disk</answer>
 	 	<answer id="3">100% load the network card</answer>
@@ -363,7 +363,7 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="1">Resources are shared by multiple users and dynamically re-allocated on demand</answer>
 	 	<answer id="2">Applications and data of multiple users are hosted on one and the same server</answer>
 	 	<answer id="3">Includes infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS)</answer>
-	 	<answer id="4">Distributed computing over a network running on applications on many connected computers at the same time</answer>
+	 	<answer id="4">Distributed computing over a network on many connected computers at the same time</answer>
 	 </question>
 	 <!-- SECURITY AND DATA PROTECTION -->
 	 <question category="Security and data protection" value="In what type web systems is an absolute must that SSL certificate?" correct-answer-id="2">
@@ -491,7 +491,7 @@ computer boot process?" correct-answer-id="1">
 	 </question>
 	 <question category="Networks" value="DNS Server is used to?" correct-answer-id="2">
 	 	<answer id="1">Assign automatically IP addresses to client computers and other TCP/IP devices</answer>
-	 	<answer id="2">Translate domain names to IP addresses for the purpose of locating computer devices worldwide</answer>
+	 	<answer id="2">Translate domain names to IP addresses in order to locate computer devices worldwide</answer>
 	 	<answer id="3">compress files and store them in the cloud</answer>
 	 	<answer id="4">send information through a secured channel over the Internet</answer>
 	 </question>
@@ -676,14 +676,14 @@ computer boot process?" correct-answer-id="1">
 	 </question>
 	 <question category="Scripting languages and database" value="What is TRUE about the difference between scripting and compiled programming languages?" correct-answer-id="2">
 	 	<answer id="1">The code of the compiled languages is executed slower than the code of the scripting languages</answer>
-	 	<answer id="2">The code of the compiled languages is directly executed by the microprocessor. The code of the scripting - always interpreted and executed on the fly</answer>
+	 	<answer id="2">The compiled - directly executed by the microprocessor. The scripting - interpreted and executed on the fly</answer>
 	 	<answer id="3">The scripting languages are older than the compiled languages</answer>
 	 	<answer id="4">There’s no difference</answer>
 	 </question>
 	 <question category="Scripting languages and database" value="What is the difference between the client side and the server side languages?" correct-answer-id="4">
 	 	<answer id="1">There is no difference</answer>
-	 	<answer id="2">The code of the client side languages runs on the user's machine. The code of the server side languages runs on the server's machine</answer>
-	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the user’s machine</answer>
-	 	<answer id="4">The code of the client side languages is used mainly for user interface and runs on the user's machine. The code of the server side languages is responsible for the main application logic and runs on the server</answer>
+	 	<answer id="2">The client side - runs on the user's machine. The server side - runs on the server's machine</answer>
+	 	<answer id="3">The client side - runs on the server. The server side - runs on the user’s machine</answer>
+	 	<answer id="4">The client side - used mainly for user interface and runs on the user's machine. The server side - responsible for the main application logic, runs on the server</answer>
 	 </question>
 </questions>
