@@ -28,6 +28,27 @@ public class Jokers {
 			jokersWindow[0].setIcon(jokerHackico);
 			jokersWindow[1].setIcon(jokerShuriken);
 			jokersWindow[2].setIcon(jokerSwitch);
+			
+			
+			jokersWindow[0].setToolTipText("<html><font color=red><p align = center>"
+					+ "<b><u> [Ninja Hack]</b></u></p></font><br>"
+					+ "You hack through the game,<br> "
+					+ "removing "+ "2 of the possible<br>"
+					+ " answers..so mean..</html>");
+			jokersWindow[1].setToolTipText("<html><font color=red><p align = center>"
+					+ "<b><u> [Shuriken Bits]</b></u></p></font><br>"
+					+ "You throw a shuriken hitting,<br> "
+					+ "few of the bits changing your<br>"
+					+ "scores value, you better aim<br>"
+					+ "carefully.</html>");
+			jokersWindow[2].setToolTipText("<html><font color=red><p align = center>"
+					+ "<b><u> [Nerds Rage]</b></u></p></font><br>"
+					+ "Please change this hard question<br> "
+					+ "for me, or<font color=red> I KEEL YOU!</font></html>");
+			
+			
+			
+			
 			// Round 1 jokers = 50/50,DoublePoints,Change Question
 			if (Data.currentRound == 1) {
 				if (Data.playerHasJoker[Data.currentPlayer] == 3) {
@@ -41,10 +62,11 @@ public class Jokers {
 
 					}
 				}
-				// Sudden strike joker action performed   = Player points multiplied x 2;
+				// Shuriken  bits ! Player points multiplied x N < 5;;
 				jokersWindow[1].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						Data.scorePlayer[Data.currentPlayer]++;
+						int bitsReward = 1 + (int) Math.floor(Math.random() * 5); // from 1 to 5 points
+						System.out.println("Random points are : "+bitsReward);					
 						jokersWindow[1].setEnabled(false);
 						Data.currentPlayerJokers[Data.currentPlayer][1]--;
 						Data.playerHasJoker[Data.currentPlayer]--;

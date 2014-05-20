@@ -67,11 +67,13 @@ public class Game {
 		jl.setIconTextGap(-800);
 		jl.setOpaque(true);
 		jl.setSize(800, 600);
+		Jokers.showJokers();
 		questionsWindow.setBounds(70, 100, 655, 260);
 		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
 		questionsWindow.setEditable(false);
 		questionsWindow.setBackground(Color.BLACK);
 		questionsWindow.setForeground(Color.GREEN);
+		questionsWindow.setOpaque(true);
 		StyledDocument doc = questionsWindow.getStyledDocument();
 		SimpleAttributeSet center = new SimpleAttributeSet();
 		StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
@@ -98,9 +100,10 @@ public class Game {
 		
 		playerScore = new JLabel(" : "
 				+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
-		playerScore.setBounds(700, 3, 100, 60);
+		playerScore.setFont(new Font("Serif", Font.BOLD, 20));
+		playerScore.setBounds(700, 30, 100, 40);
 		Main.gameWindow.add(playerScore);
-		playerScore.setBackground(Color.RED);
+		playerScore.setForeground(Color.RED);
 
 		// Create and set BUTTONS
 		for (int i = 0; i < buttons.length; i++) {
@@ -160,10 +163,11 @@ public class Game {
 		buttons[1].setBounds(420, 410, 300, 60);
 		buttons[2].setBounds(70, 490, 300, 60);
 		buttons[3].setBounds(420, 490, 300, 60);
-	    Main.gameWindow.add(jl);
+	 
 		questionsWindow.setVisible(true);
 
 		Jokers.showJokers();
+		   Main.gameWindow.add(jl);
 		// Show JokerWindow keyBinding
 	}
 
