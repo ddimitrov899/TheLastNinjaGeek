@@ -24,13 +24,13 @@ The NinjaGeek could be anyone as long as there is a strength to bite-on enough w
 
 The Player who doesn't want to lose may achieve it by not playing then will auto Mastering-UNLOOSER (lock with fingers).
 
-The looser has the right to complain 3 min unless Master Nakovoshito says it's OBSOLETE.
+The looser has the right to complain 3 min unless the Sensei says it's OBSOLETE.
 
 When it's on great rush the player is allowed to scratch where there is no itch or to move from the chair without anybody forcing him.
 
-The game is played to the end, else-if (Master.Nakovoshito.Says.) {this.Game = pointless; return;}
+The game is played to the end, else-if (Sensei.Says) {this.Game = pointless; return;}
 However, sometimes the game may lasts if the loser is from the village.
 
-The good NinjaGeek has the strength to play on cold, rain, hunger, or even after Master Nakovoshito says BREAK.
+The good NinjaGeek has the strength to play on cold, rain, hunger, or even after the Sensei says BREAK.
 
 Playing game is like playing war - kill or you will be killed. So better fight wise or you will be fought and forgotten.

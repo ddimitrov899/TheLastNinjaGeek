@@ -35,18 +35,19 @@ public class Game {
 	private static ImageIcon bg;
 
 	public static void nextQuestion() {
-		questions++;
+		questions++;		
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-		if (question.isAsked() == true) {
+		if(question.isAsked() == true) {
 			System.out.println("ALREADY ASKED GETTING NEW!");
 			return;
-		} else {
-			questionsWindow.setText(question.getValue());
 		}
-
+		else {
+		questionsWindow.setText(question.getValue());
+		}
+		
 		for (int i = 0; i < buttons.length; i++) {
-			// question.shuffleAnswers();
+			//question.shuffleAnswers();
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
 			Answer correctAnswer = question.getCorrectAnswer();
@@ -54,9 +55,9 @@ public class Game {
 			questionsWindow.setText(question.getValue());
 			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
 			buttons[i].setToolTipText(currentAnswer.getValue());
-
+			
 		}
-		System.out.println(CorA);
+		System.out.println(CorA );
 	}
 
 	public static void gameComencing() {
@@ -66,11 +67,13 @@ public class Game {
 		jl.setIconTextGap(-800);
 		jl.setOpaque(true);
 		jl.setSize(800, 600);
+		Jokers.showJokers();
 		questionsWindow.setBounds(70, 100, 655, 260);
 		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
 		questionsWindow.setEditable(false);
 		questionsWindow.setBackground(Color.BLACK);
 		questionsWindow.setForeground(Color.GREEN);
+		questionsWindow.setOpaque(true);
 		StyledDocument doc = questionsWindow.getStyledDocument();
 		SimpleAttributeSet center = new SimpleAttributeSet();
 		StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
@@ -87,18 +90,20 @@ public class Game {
 		}
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-		if (question.isAsked() == true) {
+		if(question.isAsked() == true) {
 			System.out.println("ALREADY ASKED GETTING NEW!");
 			return;
-		} else {
-			questionsWindow.setText(question.getValue());
 		}
-
+		else {
+		questionsWindow.setText(question.getValue());
+		}
+		
 		playerScore = new JLabel(" : "
 				+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
-		playerScore.setBounds(700, 3, 100, 60);
+		playerScore.setFont(new Font("Serif", Font.BOLD, 20));
+		playerScore.setBounds(700, 30, 100, 40);
 		Main.gameWindow.add(playerScore);
-		playerScore.setBackground(Color.RED);
+		playerScore.setForeground(Color.RED);
 
 		// Create and set BUTTONS
 		for (int i = 0; i < buttons.length; i++) {
@@ -109,60 +114,60 @@ public class Game {
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
 			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
-			// buttons[i].setText(currentAnswer.getValue());
+			//buttons[i].setText(currentAnswer.getValue());
 			buttons[i].setToolTipText(currentAnswer.getValue());
-			Main.gameWindow.add(buttons[i]);
+			Main.gameWindow.add(buttons[i]); 
 			buttons[i].addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					if (Data.currentPlayerJokers[Data.currentPlayer][0] == 0) {
 						for (int j = 0; j < buttons.length; j++) {
 							buttons[j].setVisible(true);
 						}
-					}
+					}					
 					JButton button = (JButton) e.getSource();
 					Answer correctAnswer = question.getCorrectAnswer();
-					// System.out.printf(" CORA = %s%n BUTT = %s",CorA,button.getText());
-					if (button.getText().equals(
-							"<html>" + correctAnswer.getValue() + "</html>")
-							|| button.getText().equals(CorA)) {
+				//	System.out.printf(" CORA = %s%n BUTT = %s",CorA,button.getText());
+					if (button.getText().equals("<html>" + correctAnswer.getValue() + "</html>")
+							||button.getText().equals(CorA)) {
 						int score = ++Data.scorePlayer[Data.currentPlayer];
 						playerScore.setText(" : " + score);
-						winStrCtr++; // adding to win streak;
-						loStrCtr = 0; // nullifying lose streak;
+						winStrCtr++;                      // adding to win streak;
+						loStrCtr = 0;                       // nullifying lose streak;
 						if (winStrCtr == 5) {
 							Data.playerHasJoker[Data.currentPlayer]++;
-						} else if (winStrCtr == 10) {
+						}
+						else if (winStrCtr == 10){
 							Data.scorePlayer[Data.currentPlayer] *= 2;
-							Data.playerHasJoker[Data.currentPlayer]++;
-						} else if (winStrCtr == 20) {
+					    	Data.playerHasJoker[Data.currentPlayer]++;
+						}
+						else if (winStrCtr == 20){
 							Data.scorePlayer[Data.currentPlayer] *= 4;
-							Data.playerHasJoker[Data.currentPlayer]++;
-							System.out.println("\u001B[31m"
-									+ "OUTSTANDING!!!!!!!");
+					    	Data.playerHasJoker[Data.currentPlayer]++;
+					    	System.out.println("\u001B[31m"+"OUTSTANDING!!!!!!!");
 						}
 						System.out.printf("%nCorrect Answer down");
-						nextQuestion();
+						nextQuestion();				
 					} else {
 						winStrCtr = 0;
 						loStrCtr++;
 						System.out.printf("%nWrong Answer Down!");
 						if (loStrCtr > 4) {
 							System.out.println("GAME OVER!!!!!!!!!!!!");
-						}
+						}				
 						nextQuestion();
 					}
 				}
 			});
 		}
-		
 		buttons[0].setBounds(70, 410, 300, 60); // X, Y, Width,Height format;
 		buttons[1].setBounds(420, 410, 300, 60);
 		buttons[2].setBounds(70, 490, 300, 60);
 		buttons[3].setBounds(420, 490, 300, 60);
-		Main.gameWindow.add(jl);
+	 
 		questionsWindow.setVisible(true);
 
 		Jokers.showJokers();
+		   Main.gameWindow.add(jl);
 		// Show JokerWindow keyBinding
 	}
 

@@ -87,7 +87,7 @@
 	 	<answer id="3">Inno Setup</answer>
 	 	<answer id="4">All of the above</answer>
 	 </question>
-	 <question category="Handling computer systems and programs" value="Which of the following is least likely to lead to an evidently slowdown in the computerized system and the drivers works fine?" correct-answer-id="3">
+	 <question category="Handling computer systems and programs" value="Which of the following is least likely to lead to an evidently slowdown in the computerized system if the drivers works fine?" correct-answer-id="3">
 	 	<answer id="1">100% CPU load</answer>
 	 	<answer id="2">100% load on the hard disk</answer>
 	 	<answer id="3">100% load the network card</answer>
@@ -107,7 +107,7 @@
 	 </question>
 	 <question category="Handling computer systems and programs" value="What issue should be troubleshooted when “Non-system disk or disk error” message appears during
 computer boot process?" correct-answer-id="1">
-	 	<answer id="1">The computer failed to locate a boot sector with an operating system installed</answer>
+	 	<answer id="1">The computer failed to locate a boot sector with an OS installed</answer>
 	 	<answer id="2">A video card driver cannot be found</answer>
 	 	<answer id="3">The CPU is overheated</answer>
 	 	<answer id="4">A memory size error</answer>
@@ -177,16 +177,15 @@ computer boot process?" correct-answer-id="1">
 	 <question category="Operating systems" value="What does the term “kernel” mean?" correct-answer-id="3">
 	 	<answer id="1">File system used by Apple’s OS X operating system</answer>
 	 	<answer id="2">Computer hardware device that manages the input/output interactions with the user</answer>
-	 	<answer id="3">Computer program that manages the input/output requests of software and translates them to specific instructions for the processor and other components of the computer system</answer>
-	 	<answer id="4">Computer program which comes with some operating systems and is used to record logs of all the
-interactions of the operating system and the application software</answer>
+	 	<answer id="3">Computer program that manages the input/output requests</answer>
+	 	<answer id="4">Computer program which comes with some OS and is used to record logs</answer>
 	 </question>
 	 <!-- FILE SYSTEMS -->
 	 <question category="File systems" value="Which of the following is not true?" correct-answer-id="3">
 	 	<answer id="1">NTFS file system is used in the modern Windows Operating systems</answer>
 	 	<answer id="2">Ext2 is the name of a file system</answer>
-	 	<answer id="3">The file system is responsible for distributing the operative memory for all the running processes in the computer system</answer>
-	 	<answer id="4">The file system is responsible for allocating and organizing physical disk space for files and directories</answer>
+	 	<answer id="3">The file system is responsible for distributing the operative memory for all the running processes</answer>
+	 	<answer id="4">The file system is responsible for allocating and organizing physical disk space</answer>
 	 </question>
 	 <question category="File systems" value="Which of the following is NOT a responsibility of the Operating System core?" correct-answer-id="4">
 	 	<answer id="1">Memory management</answer>
@@ -232,9 +231,9 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="4">.gz</answer>
 	 </question>
 	 <question category="Compressing and Decompressing" value="Which of the following statements about symmetrical and asymmetrical compression algorithms is NOT true?" correct-answer-id="4">
-	 	<answer id="1">Symmetry and asymmetry, in the context of data compression, refers to the time relation between compression and decompression</answer>
-	 	<answer id="2">Symmetric algorithms are used for media streaming (for example Internet TV) because the longer time for compression in the server or decompression in the client would lead to delays in the viewing of the data</answer>
-	 	<answer id="3">Asymmetrical algorithms with faster compression than decompression are used for backing up or archiving data, as in these cases data is more often stored rather than retrieved</answer>
+	 	<answer id="1">Symmetry and asymmetry of data compression, refers to the time relation between compression and decompression</answer>
+	 	<answer id="2">Symmetric algorithms are used for media streaming (Internet TV) - the longer time delays in the viewing of the data</answer>
+	 	<answer id="3">Asymmetrical algorithms with faster compression than decompression are used for backing up or archiving data</answer>
 	 	<answer id="4">All are true</answer>
 	 </question>
 	 <question category="Compressing and Decompressing" value="Which of the following is NOT lossless compression algorithm?" correct-answer-id="3">
@@ -339,7 +338,7 @@ interactions of the operating system and the application software</answer>
 	 <question category="Information systems" value="Which is the correct definition of information system?" correct-answer-id="3">
 	 	<answer id="1">Web based software, hosted in the cloud</answer>
 	 	<answer id="2">A collection of related data organized for convenient access</answer>
-	 	<answer id="3">An integrated set of hardware and software components used by people for collecting, storing, and processing data and for delivering information, knowledge, and digital products</answer>
+	 	<answer id="3">An integrated set of components used by people for collecting, storing, processing data, for delivering information, knowledge, and digital products</answer>
 	 	<answer id="4">A computer program that allows creating, editing and publishing content</answer>
 	 </question>
 	 <question category="Information systems" value="What is NOT true about the CRM systems?" correct-answer-id="1">
@@ -355,7 +354,7 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="4">Software that assists in the creation, modification, analysis or optimization of a product’s design</answer>
 	 </question>
 	 <question category="Information systems" value="What is TRUE about the ERP systems?" correct-answer-id="1">
-	 	<answer id="1">Set of integrated enterprise software tools designed to facilitate the flow of information between all departments within a business and serve all their needs</answer>
+	 	<answer id="1">Set of integrated enterprise software tools facilitating the flow of information between all business departments and serve their needs</answer>
 	 	<answer id="2">Integrated development environment</answer>
 	 	<answer id="3">Accounting software systems</answer>
 	 	<answer id="4">Computer systems used to design and manufacture products</answer>
@@ -363,8 +362,8 @@ interactions of the operating system and the application software</answer>
 	 <question category="Information systems" value="Which of the following is NOT a characteristic of the cloud computing?" correct-answer-id="2">
 	 	<answer id="1">Resources are shared by multiple users and dynamically re-allocated on demand</answer>
 	 	<answer id="2">Applications and data of multiple users are hosted on one and the same server</answer>
-	 	<answer id="3">Includes several fundamental models like infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS)</answer>
-	 	<answer id="4">Distributed computing over a network with the ability to run applications on many connected computers at the same time</answer>
+	 	<answer id="3">Includes infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS)</answer>
+	 	<answer id="4">Distributed computing over a network on many connected computers at the same time</answer>
 	 </question>
 	 <!-- SECURITY AND DATA PROTECTION -->
 	 <question category="Security and data protection" value="In what type web systems is an absolute must that SSL certificate?" correct-answer-id="2">
@@ -492,7 +491,7 @@ interactions of the operating system and the application software</answer>
 	 </question>
 	 <question category="Networks" value="DNS Server is used to?" correct-answer-id="2">
 	 	<answer id="1">Assign automatically IP addresses to client computers and other TCP/IP devices</answer>
-	 	<answer id="2">Translate domain names to IP addresses needed for the purpose of locating computer devices worldwide</answer>
+	 	<answer id="2">Translate domain names to IP addresses in order to locate computer devices worldwide</answer>
 	 	<answer id="3">compress files and store them in the cloud</answer>
 	 	<answer id="4">send information through a secured channel over the Internet</answer>
 	 </question>
@@ -644,7 +643,7 @@ interactions of the operating system and the application software</answer>
 	 	<answer id="3">span</answer>
 	 	<answer id="4">header</answer>
 	 </question>
-	 <question category="Website development" value="Which input type=”” will display entered text as asterisks?" correct-answer-id="2">
+	 <question category="Website development" value="Which input type will display entered text as asterisks?" correct-answer-id="2">
 	 	<answer id="1">input type=”asterisk”</answer>
 	 	<answer id="2">input type=”password”</answer>
 	 	<answer id="3">input type=”hidden”</answer>
@@ -677,14 +676,14 @@ interactions of the operating system and the application software</answer>
 	 </question>
 	 <question category="Scripting languages and database" value="What is TRUE about the difference between scripting and compiled programming languages?" correct-answer-id="2">
 	 	<answer id="1">The code of the compiled languages is executed slower than the code of the scripting languages</answer>
-	 	<answer id="2">The code of the compiled languages is converted into machine code and is later directly executed by the microprocessor. The code of the scripting languages is always interpreted and executed on the fly</answer>
+	 	<answer id="2">The compiled - directly executed by the microprocessor. The scripting - interpreted and executed on the fly</answer>
 	 	<answer id="3">The scripting languages are older than the compiled languages</answer>
 	 	<answer id="4">There’s no difference</answer>
 	 </question>
 	 <question category="Scripting languages and database" value="What is the difference between the client side and the server side languages?" correct-answer-id="4">
 	 	<answer id="1">There is no difference</answer>
-	 	<answer id="2">The code of the client side languages is responsible for the main application logic and runs on the user's machine. The code of the server side languages is used mainly for user interface and runs on the server</answer>
-	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the user’s machine</answer>
-	 	<answer id="4">The code of the client side languages is used mainly for user interface and runs on the user's machine. The code of the server side languages is responsible for the main application logic and runs on the server</answer>
+	 	<answer id="2">The client side - runs on the user's machine. The server side - runs on the server's machine</answer>
+	 	<answer id="3">The client side - runs on the server. The server side - runs on the user’s machine</answer>
+	 	<answer id="4">The client side - used mainly for user interface and runs on the user's machine. The server side - responsible for the main application logic, runs on the server</answer>
 	 </question>
 </questions>
