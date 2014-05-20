@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml <?xml version="1.0" encoding="UTF-8"?>
 <questions>
-	<question category="Обща култура" correct-answer-id="1" 
-		value="Кой е създателят на първия електронен дигитален компютър?">
-		<answer id="1">Джон Атанасов</answer>
-		<answer id="2">Чарлз Бабидж</answer>
-		<answer id="3">Стийв Джобс</answer>
-		<answer id="4">Бил Гейтс</answer>
+	<!-- Pascal -->
 	</question>
 	 <question category="Pascal" value="Низ наричаме крайна последователност от?" correct-answer-id="2">
 	 	<answer id="1">Числа</answer>
@@ -79,5 +74,65 @@
 	 	<answer id="2">свързаване с вътрешен фаел F с външен файл text.txt</answer>
 	 	<answer id="3">отваря външния файл text.txt</answer>
 	 	<answer id="4">отваря вътрешен файл F</answer>
+	<!-- C++ -->
 	 </question>
+	 <question category="C++" value="What type of variable can be used as a selector in the Switch-Case statement?" correct-answer-id="1">
+	 	<answer id="1">int []</answer>
+	 	<answer id="2">Double</answer>
+	 	<answer id="3">char</answer>
+	 	<answer id="4">variable custom class</answer>
+	 </question>
+	 <question category="C++" value=" Which of the following is a primitive type?" correct-answer-id="2">
+	 	<answer id="1">custom class</answer>
+	 	<answer id="2">Custom structure</answer>
+	 	<answer id="3">int array</answer>
+	 	<answer id="4">int</answer>
+	 </question>
+	 <question category="C++" value="What visibility modifier is used in the inheritance of properties of the base class by default?" correct-answer-id="2">
+	 	<answer id="1">protected</answer>
+	 	<answer id="2">Public</answer>
+	 	<answer id="3">Private</answer>
+	 	<answer id="4">does not apply</answer>
+	 </question>
+	 <question category="C++" value=" List directives limiting visibility in the order of "increasing transparency"" correct-answer-id="4">
+	 	<answer id="1">Public, protected, Private</answer>
+	 	<answer id="2">Public, Private, protected</answer>
+	 	<answer id="3">of Private, Public, protected</answer>
+	 	<answer id="4">of Private, protected, public</answer>
+	 </question>
+	 <question category="C++" value="Which statement is not correct?" correct-answer-id="1">
+	 	<answer id="1">class constructor can not take parameters</answer>
+	 	<answer id="2">A class can not contain more than one constructor</answer>
+	 	<answer id="3">A class can have multiple constructors</answer>
+	 	<answer id="4">The class constructor is always declared in section public</answer>
+	 </question>
+	 <question category="C++" value="In what section you can declare a class constructor?" correct-answer-id="1">
+	 	<answer id="1">Only in Public section</answer>
+	 	<answer id="2">Only in the protected section or Public</answer>
+	 	<answer id="3">Depends on where the constructor is declared ancestor class</answer>
+	 	<answer id="4">in any section</answer>
+	 </question>
+	 <question category="C++" value="Where can I initialize static class variable?" correct-answer-id="2">
+	 	<answer id="1">in class body</answer>
+	 	<answer id="2">in the class constructor</answer>
+	 	<answer id="3">in file scope</answer>
+	 	<answer id="4">in the scope of a class method</answer>
+	 </question>
+	 <question category="C++" value="Object was created dynamically, with the pointer to an object declared as a local variable of the function main (). What happens when you exit the function context?" correct-answer-id="1">
+	 	<answer id="1">the object's destructor is called automatically when you exit the declared context</answer>
+	 	<answer id="2">a pointer to the object is destroyed, but there is no destructor calls</answer>
+	 	<answer id="3">and a pointer to the object to be destroyed</answer>
+	 	<answer id="4">other</answer>
+	 </question>
+	 <question category="C++" value="Can I create a C + + abstract classes?" correct-answer-id="3">
+	 	<answer id="1">No, just the usual</answer>
+	 	<answer id="2">is possible, using the keyword abstract</answer>
+	 	<answer id="3">It is possible, using the keyword virtual</answer>
+	 	<answer id="4">is called an abstract class at the top of the hierarchy of classes in the system</answer>
+	 </question>
+	 <question category="C++" value="Is there a C + + ability to create a custom class for which you can perform the assignment of a primitive type, for example: int i = 5; MyClass obj = I;" correct-answer-id="2">
+	 	<answer id="1">can</answer>
+	 	<answer id="2">can not, an error here cast</answer>
+	 	<answer id="3">can not, bitwise copying in this case will not work correctly</answer>
+	 	<answer id="4">Other</answer>
 </questions>
