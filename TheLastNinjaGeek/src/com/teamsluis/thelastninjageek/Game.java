@@ -51,6 +51,7 @@ public class Game {
 			Answer currentAnswer = answers.get(i);
 			
 			buttons[i].setText(currentAnswer.getValue());
+			buttons[i].setToolTipText(currentAnswer.getValue());
 			Main.gameWindow.add(buttons[i]); // here
 
 			buttons[i].addActionListener(new ActionListener() {
