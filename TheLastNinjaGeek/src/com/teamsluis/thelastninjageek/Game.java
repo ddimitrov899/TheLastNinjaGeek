@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.Set;
 
 import javax.swing.*;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
@@ -22,11 +25,60 @@ public class Game {
 	public static int questions = 0;
 	private static Map<String, List<Question>> questionsByCategory;
 	private final static String xmlLocation = "resources/data/questions.xml";
+	static JTextPane questionsWindow = new JTextPane();
+	static JButton[] buttons = new JButton[4];
+	static JLabel playerScore = new JLabel(" : "
+			+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
+	static JButton button = new JButton();
+	static boolean isClicked = false;
+	static String CorA;
+	private static ImageIcon bg;
+
+	public static void nextQuestion() {
+		questions++;		
+		String category = getRandomCategory(questionsByCategory);
+		Question question = getRandomQuestionForCategory(category);
+		if(question.isAsked() == true) {
+			System.out.println("ALREADY ASKED GETTING NEW!");
+			return;
+		}
+		else {
+		questionsWindow.setText(question.getValue());
+		}
+		
+		for (int i = 0; i < buttons.length; i++) {
+			//question.shuffleAnswers();
+			List<Answer> answers = question.getAnswers();
+			Answer currentAnswer = answers.get(i);
+			Answer correctAnswer = question.getCorrectAnswer();
+			CorA = ("<html>" + correctAnswer.getValue() + "</html>");
+			questionsWindow.setText(question.getValue());
+			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
+			buttons[i].setToolTipText(currentAnswer.getValue());
+			
+		}
+		System.out.println(CorA );
+	}
 
 	public static void gameComencing() {
+		JLabel jl = new JLabel();
+		bg = new ImageIcon("resources/images/gamepanel.jpg");
+		jl.setIcon(bg);
+		jl.setIconTextGap(-800);
+		jl.setOpaque(true);
+		jl.setSize(800, 600);
+		questionsWindow.setBounds(70, 100, 655, 260);
+		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
+		questionsWindow.setEditable(false);
+		questionsWindow.setBackground(Color.BLACK);
+		questionsWindow.setForeground(Color.GREEN);
+		StyledDocument doc = questionsWindow.getStyledDocument();
+		SimpleAttributeSet center = new SimpleAttributeSet();
+		StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
+		doc.setParagraphAttributes(0, doc.getLength(), center, false);
 
-		JTextArea questionsWindow = setWindowDimensions();
-
+		Main.gameWindow.add(questionsWindow);
+		questions++;
 		try {
 			questionsByCategory = DataPersister
 					.loadCategoriesFromXmlFile(xmlLocation);
@@ -34,103 +86,119 @@ public class Game {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		}
-
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-		question.shuffleAnswers();
-		
+		if(question.isAsked() == true) {
+			System.out.println("ALREADY ASKED GETTING NEW!");
+			return;
+		}
+		else {
 		questionsWindow.setText(question.getValue());
-
-		setPlayer();
+		}
 		
+		playerScore = new JLabel(" : "
+				+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
+		playerScore.setBounds(700, 3, 100, 60);
+		Main.gameWindow.add(playerScore);
+		playerScore.setBackground(Color.RED);
+
 		// Create and set BUTTONS
-		JButton[] buttons = new JButton[4];
 		for (int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton();
+			buttons[i].setForeground(Color.WHITE);
+			buttons[i].setBackground(Color.BLACK);
+			buttons[i].setFont(new java.awt.Font("Times New Roman", 1, 12));
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
-			
-			buttons[i].setText(currentAnswer.getValue());
+			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
+			//buttons[i].setText(currentAnswer.getValue());
 			buttons[i].setToolTipText(currentAnswer.getValue());
-			Main.gameWindow.add(buttons[i]); // here
-
+			Main.gameWindow.add(buttons[i]); 
 			buttons[i].addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
+					if (Data.currentPlayerJokers[Data.currentPlayer][0] == 0) {
+						for (int j = 0; j < buttons.length; j++) {
+							buttons[j].setVisible(true);
+						}
+					}					
 					JButton button = (JButton) e.getSource();
-				    Answer correctAnswer = question.getCorrectAnswer();
-				    System.out.println(button.getText());
-				    
-				    if (button.getText().equals(correctAnswer.getValue())) {
-						//TO DO	
+					Answer correctAnswer = question.getCorrectAnswer();
+				//	System.out.printf(" CORA = %s%n BUTT = %s",CorA,button.getText());
+					if (button.getText().equals("<html>" + correctAnswer.getValue() + "</html>")
+							||button.getText().equals(CorA)) {
+						int score = ++Data.scorePlayer[Data.currentPlayer];
+						playerScore.setText(" : " + score);
+						winStrCtr++;                      // adding to win streak;
+						loStrCtr = 0;                       // nullifying lose streak;
+						if (winStrCtr == 5) {
+							Data.playerHasJoker[Data.currentPlayer]++;
+						}
+						else if (winStrCtr == 10){
+							Data.scorePlayer[Data.currentPlayer] *= 2;
+					    	Data.playerHasJoker[Data.currentPlayer]++;
+						}
+						else if (winStrCtr == 20){
+							Data.scorePlayer[Data.currentPlayer] *= 4;
+					    	Data.playerHasJoker[Data.currentPlayer]++;
+					    	System.out.println("\u001B[31m"+"OUTSTANDING!!!!!!!");
+						}
+						System.out.printf("%nCorrect Answer down");
+						nextQuestion();				
 					} else {
-						//TO DO
+						winStrCtr = 0;
+						loStrCtr++;
+						System.out.printf("%nWrong Answer Down!");
+						if (loStrCtr > 4) {
+							System.out.println("GAME OVER!!!!!!!!!!!!");
+						}				
+						nextQuestion();
 					}
 				}
 			});
 		}
-
 		buttons[0].setBounds(70, 410, 300, 60); // X, Y, Width,Height format;
 		buttons[1].setBounds(420, 410, 300, 60);
 		buttons[2].setBounds(70, 490, 300, 60);
 		buttons[3].setBounds(420, 490, 300, 60);
+	    Main.gameWindow.add(jl);
 		questionsWindow.setVisible(true);
 
 		Jokers.showJokers();
 		// Show JokerWindow keyBinding
 	}
 
-	//There could be a bug when all question are exhausted
-	//The method could fall in endless loop
+	// There could be a bug when all question are exhausted
+	// The method could fall in endless loop
 	private static Question getRandomQuestionForCategory(String category) {
 		List<Question> questions = questionsByCategory.get(category);
 		Question question;
-		
+
 		do {
-			int randomIndex = Randomizer.getRandomNumberInRange(0, questions.size() - 1);
+			int randomIndex = Randomizer.getRandomNumberInRange(0,
+					questions.size() - 1);
 			question = questions.get(randomIndex);
 		} while (question.isAsked());
-		
+
 		return question;
 	}
 
-	private static String getRandomCategory(Map<String, List<Question>> questionsByCategory) {
+	private static String getRandomCategory(
+			Map<String, List<Question>> questionsByCategory) {
 		Set<String> categories = questionsByCategory.keySet();
-		int i = 0, randommCategoryIndex = Randomizer.getRandomNumberInRange(0, categories.size() - 1);
+		int i = 0, randommCategoryIndex = Randomizer.getRandomNumberInRange(0,
+				categories.size() - 1);
 		String category = null;
-		
+
 		for (String currentCategory : categories) {
 			if (i == randommCategoryIndex) {
 				category = currentCategory;
 				break;
 			}
-			
+
 			i++;
 		}
-		
+
 		return category;
-	}
-
-	private static void setPlayer() {
-		// Labels
-		JLabel playerName = new JLabel("<html><font color=red>"
-				+ Data.namePlayer[0] + "</font></html>");
-		JLabel playerScore = new JLabel(" : "
-				+ Integer.toString(Data.scorePlayer[0]));
-		playerName.setBounds(670, 3, 100, 60);
-		playerScore.setBounds(700, 3, 100, 60);
-		Main.gameWindow.add(playerName);
-		Main.gameWindow.add(playerScore);
-	}
-
-	private static JTextArea setWindowDimensions() {
-		JTextArea questionsWindow = new JTextArea();
-		questionsWindow.setBounds(70, 100, 655, 260);
-		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
-		questionsWindow.setLineWrap(true);
-		questionsWindow.setWrapStyleWord(true);
-		questionsWindow.setEditable(false);
-		Main.gameWindow.add(questionsWindow);
-		return questionsWindow;
 	}
 
 }
