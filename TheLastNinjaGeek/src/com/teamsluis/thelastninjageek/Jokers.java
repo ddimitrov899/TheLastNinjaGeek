@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class Jokers {
@@ -17,10 +18,16 @@ public class Jokers {
 				jokersWindow[i].setVisible(true);
 				jokersWindow[i].setForeground(Color.WHITE);
 				jokersWindow[i].setBackground(Color.BLACK);
-				jokersWindow[i].setBounds(720, 60 + ((i + 1) * 70), 70, 60);
-				;
+				jokersWindow[i].setBounds(730, 60 + ((i + 1) * 70), 70, 60);			
 				Main.gameWindow.add(jokersWindow[i]);
 			}
+			ImageIcon jokerHackico =  new ImageIcon("resources/images/icones/50f50.jpg");
+			ImageIcon jokerShuriken =  new ImageIcon("resources/images/icones/shuriken.jpg");
+			ImageIcon jokerSwitch =  new ImageIcon("resources/images/icones/switch.jpg");
+
+			jokersWindow[0].setIcon(jokerHackico);
+			jokersWindow[1].setIcon(jokerShuriken);
+			jokersWindow[2].setIcon(jokerSwitch);
 			// Round 1 jokers = 50/50,DoublePoints,Change Question
 			if (Data.currentRound == 1) {
 				if (Data.playerHasJoker[Data.currentPlayer] == 3) {
