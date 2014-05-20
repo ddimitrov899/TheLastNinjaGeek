@@ -231,8 +231,8 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="4">.gz</answer>
 	 </question>
 	 <question category="Compressing and Decompressing" value="Which of the following statements about symmetrical and asymmetrical compression algorithms is NOT true?" correct-answer-id="4">
-	 	<answer id="1">Symmetry and asymmetry, in the context of data compression, refers to the time relation between compression and decompression</answer>
-	 	<answer id="2">Symmetric algorithms are used for media streaming (Internet TV) - the longer time for compression or decompression lead to delays in the viewing of the data</answer>
+	 	<answer id="1">Symmetry and asymmetry of data compression, refers to the time relation between compression and decompression</answer>
+	 	<answer id="2">Symmetric algorithms are used for media streaming (Internet TV) - the longer time delays in the viewing of the data</answer>
 	 	<answer id="3">Asymmetrical algorithms with faster compression than decompression are used for backing up or archiving data</answer>
 	 	<answer id="4">All are true</answer>
 	 </question>
@@ -643,7 +643,7 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="3">span</answer>
 	 	<answer id="4">header</answer>
 	 </question>
-	 <question category="Website development" value="Which input type=”” will display entered text as asterisks?" correct-answer-id="2">
+	 <question category="Website development" value="Which input type will display entered text as asterisks?" correct-answer-id="2">
 	 	<answer id="1">input type=”asterisk”</answer>
 	 	<answer id="2">input type=”password”</answer>
 	 	<answer id="3">input type=”hidden”</answer>
@@ -676,13 +676,13 @@ computer boot process?" correct-answer-id="1">
 	 </question>
 	 <question category="Scripting languages and database" value="What is TRUE about the difference between scripting and compiled programming languages?" correct-answer-id="2">
 	 	<answer id="1">The code of the compiled languages is executed slower than the code of the scripting languages</answer>
-	 	<answer id="2">The code of the compiled languages is converted into machine code and is directly executed by the microprocessor. The code of the scripting languages is always interpreted and executed on the fly</answer>
+	 	<answer id="2">The code of the compiled languages is directly executed by the microprocessor. The code of the scripting - always interpreted and executed on the fly</answer>
 	 	<answer id="3">The scripting languages are older than the compiled languages</answer>
 	 	<answer id="4">There’s no difference</answer>
 	 </question>
 	 <question category="Scripting languages and database" value="What is the difference between the client side and the server side languages?" correct-answer-id="4">
 	 	<answer id="1">There is no difference</answer>
-	 	<answer id="2">The code of the client side languages is responsible for the main application logic and runs on the user's machine. The code of the server side languages is used mainly for user interface and runs on the server</answer>
+	 	<answer id="2">The code of the client side languages runs on the user's machine. The code of the server side languages runs on the server's machine</answer>
 	 	<answer id="3">The code of client side languages runs on the server. The code of the server side languages runs on the user’s machine</answer>
 	 	<answer id="4">The code of the client side languages is used mainly for user interface and runs on the user's machine. The code of the server side languages is responsible for the main application logic and runs on the server</answer>
 	 </question>
