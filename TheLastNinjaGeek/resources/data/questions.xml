@@ -338,7 +338,7 @@ computer boot process?" correct-answer-id="1">
 	 <question category="Information systems" value="Which is the correct definition of information system?" correct-answer-id="3">
 	 	<answer id="1">Web based software, hosted in the cloud</answer>
 	 	<answer id="2">A collection of related data organized for convenient access</answer>
-	 	<answer id="3">An integrated set of components used by people for collecting, storing, processing data, for delivering information, knowledge, and digital products</answer>
+	 	<answer id="3">An integrated set of components for collecting, storing, processing data, delivering information, knowledge, and digital products</answer>
 	 	<answer id="4">A computer program that allows creating, editing and publishing content</answer>
 	 </question>
 	 <question category="Information systems" value="What is NOT true about the CRM systems?" correct-answer-id="1">
@@ -533,7 +533,7 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="4">Cryptographic communication protocol</answer>
 	 </question>
 	 <question category="Internet" value="Which of the following is not true?" correct-answer-id="4">
-	 	<answer id="1">Satellite internet has a larger latency rate compared to most other types of internet access - somewhere around 1 second</answer>
+	 	<answer id="1">Satellite internet has a larger latency rate compared to most other types of internet access, about 1 second</answer>
 	 	<answer id="2">IEEE 802.11 is a wireless network standard</answer>
 	 	<answer id="3">4G uses mobile broadband to grant internet access</answer>
 	 	<answer id="4">ISDN provides internet access via coaxial cable</answer>
@@ -684,6 +684,6 @@ computer boot process?" correct-answer-id="1">
 	 	<answer id="1">There is no difference</answer>
 	 	<answer id="2">The client side - runs on the user's machine. The server side - runs on the server's machine</answer>
 	 	<answer id="3">The client side - runs on the server. The server side - runs on the user’s machine</answer>
-	 	<answer id="4">The client side - used mainly for user interface and runs on the user's machine. The server side - responsible for the main application logic, runs on the server</answer>
+	 	<answer id="4">The client side - for user interface and runs on the user's machine. The server - the main application logic, runs on the server</answer>
 	 </question>
 </questions>
