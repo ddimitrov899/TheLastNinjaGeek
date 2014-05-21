@@ -75,10 +75,12 @@ public class Main {
 				.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						gameWindow.setContentPane(oldPane);
-						if (Data.ninjas > 1) {
-							Multyplayer.displayMulty();
-						}
+						throw new UnsupportedOperationException("Sorry the multiplayer is not supported for now");
+
+//						gameWindow.setContentPane(oldPane);
+//						if (Data.ninjas > 1) {
+//							Multyplayer.displayMulty();
+//						}
 					}
 				});
 
