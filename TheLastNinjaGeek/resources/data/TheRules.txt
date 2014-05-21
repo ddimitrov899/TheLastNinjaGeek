@@ -29,7 +29,7 @@ The looser has the right to complain 3 min unless the Sensei says it's OBSOLETE.
 When it's on great rush the player is allowed to scratch where there is no itch or to move from the chair without anybody forcing him.
 
 The game is played to the end, else-if (Sensei.Says) {this.Game = pointless; return;}
-However, sometimes the game may lasts if the loser is from the village.
+However, sometimes the game may lasts if the loser is from a village.
 
 The good NinjaGeek has the strength to play on cold, rain, hunger, or even after the Sensei says BREAK.
 
