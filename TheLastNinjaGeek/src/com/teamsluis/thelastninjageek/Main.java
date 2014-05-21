@@ -52,8 +52,9 @@ public class Main {
 			menuList[i] = new JButton();
 			menuList[i].setFont(new java.awt.Font("Tahoma", 0, 18));
 			menuList[i].setText(MENU_OPTIONS[i]);
-			menuList[i].setBounds(330, gap, 145, 30);
+			menuList[i].setBounds(330, gap, 200, 30);
 			menuList[i].setOpaque(true);
+			menuList[i].setFocusPainted(false);
 			menuList[i].setHorizontalTextPosition(JLabel.CENTER);
 			menuList[i].setBackground(Color.BLACK);
 			gameWindow.add(menuList[i]);
@@ -94,8 +95,8 @@ public class Main {
 				.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						throw new UnsupportedOperationException(
-								"Option 3 is not supported");
+						gameWindow.setContentPane(oldPane);
+						Rules.show();
 					}
 				});
 		
