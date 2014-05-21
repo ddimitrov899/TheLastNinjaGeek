@@ -52,7 +52,7 @@ public class Game {
 			Answer currentAnswer = answers.get(i);
 			Answer correctAnswer = question.getCorrectAnswer();
 			CorA = ("<html>" + correctAnswer.getValue() + "</html>");
-			questionsWindow.setText(question.getValue());
+			questionsWindow.setText("<html><bg color = black>"+question.getValue()+"</font></html>");
 			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
 			buttons[i].setToolTipText(currentAnswer.getValue());
 			
@@ -62,22 +62,23 @@ public class Game {
 
 	public static void gameComencing() {
 		JLabel jl = new JLabel();
-		bg = new ImageIcon("resources/images/gamepanel.jpg");
+		bg = new ImageIcon("resources/images/GamePanel.jpg");
 		jl.setIcon(bg);
 		jl.setIconTextGap(-800);
 		jl.setOpaque(true);
 		jl.setSize(800, 600);
 		Jokers.showJokers();
-		questionsWindow.setBounds(70, 100, 655, 260);
-		questionsWindow.setFont(new Font("Serif", Font.ITALIC, 26));
+		questionsWindow.setBounds(70, 150, 655, 260);
+		questionsWindow.setFont(new Font("Serif", Font.BOLD, 26));
 		questionsWindow.setEditable(false);
 		questionsWindow.setBackground(Color.BLACK);
-		questionsWindow.setForeground(Color.GREEN);
-		questionsWindow.setOpaque(true);
+	    questionsWindow.setForeground(Color.BLACK);
+		questionsWindow.setOpaque(false);
 		StyledDocument doc = questionsWindow.getStyledDocument();
 		SimpleAttributeSet center = new SimpleAttributeSet();
 		StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
 		doc.setParagraphAttributes(0, doc.getLength(), center, false);
+		
 
 		Main.gameWindow.add(questionsWindow);
 		questions++;
@@ -91,7 +92,6 @@ public class Game {
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
 		if(question.isAsked() == true) {
-			System.out.println("ALREADY ASKED GETTING NEW!");
 			return;
 		}
 		else {
@@ -114,7 +114,6 @@ public class Game {
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
 			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
-			//buttons[i].setText(currentAnswer.getValue());
 			buttons[i].setToolTipText(currentAnswer.getValue());
 			Main.gameWindow.add(buttons[i]); 
 			buttons[i].addActionListener(new ActionListener() {
@@ -129,6 +128,10 @@ public class Game {
 				//	System.out.printf(" CORA = %s%n BUTT = %s",CorA,button.getText());
 					if (button.getText().equals("<html>" + correctAnswer.getValue() + "</html>")
 							||button.getText().equals(CorA)) {
+						if (Data.playerUsedShuriken == true) {
+							Data.playerUsedShuriken = false;
+							Data.scorePlayer[Data.currentPlayer] += Jokers.bitsReward;
+						}
 						int score = ++Data.scorePlayer[Data.currentPlayer];
 						playerScore.setText(" : " + score);
 						winStrCtr++;                      // adding to win streak;

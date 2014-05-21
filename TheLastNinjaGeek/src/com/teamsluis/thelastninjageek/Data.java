@@ -4,6 +4,7 @@ public class Data {
 	public static int ninjas = 1;
 	public static int currentPlayer;
 	public static int currentRound = 1;
+	public static boolean playerUsedShuriken = false;
 	public static boolean jokersAllowed = true;
 	public static int[][] currentPlayerJokers;
 	public static int[] scorePlayer;
