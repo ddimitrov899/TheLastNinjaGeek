@@ -17,6 +17,7 @@ public class Jokers {
 			JButton[] jokersWindow = new JButton[3];
 			for (int i = 0; i < jokersWindow.length; i++) {
 				jokersWindow[i] = new JButton();
+				jokersWindow[i].setFocusPainted(false);
 				jokersWindow[i].setEnabled(false);
 				jokersWindow[i].setVisible(true);
 				jokersWindow[i].setForeground(Color.WHITE);
@@ -25,11 +26,11 @@ public class Jokers {
 				Main.gameWindow.add(jokersWindow[i]);
 			}
 			ImageIcon jokerHackico = new ImageIcon(
-					"resources/images/icones/50f50.jpg");
+					"resources/images/icons/50f50.jpg");
 			ImageIcon jokerShuriken = new ImageIcon(
-					"resources/images/icones/shuriken.jpg");
+					"resources/images/icons/shuriken.jpg");
 			ImageIcon jokerSwitch = new ImageIcon(
-					"resources/images/icones/switch.jpg");
+					"resources/images/icons/switch.jpg");
 
 			jokersWindow[0].setIcon(jokerHackico);
 			jokersWindow[1].setIcon(jokerShuriken);

@@ -41,6 +41,7 @@ public class Rules {
 		rulesPane.setBackground(Color.BLACK);
 		rulesPane.setForeground(Color.GREEN);
 		rulesPane.setOpaque(true);
+		rulesPane.setHighlighter(null);
 
 		if (rules == null) {
 			rulesPane.setText("Rules Cannot Be loadead");
