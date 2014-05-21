@@ -27,8 +27,7 @@ public class Game {
 	private final static String xmlLocation = "resources/data/questions.xml";
 	static JTextPane questionsWindow = new JTextPane();
 	static JButton[] buttons = new JButton[4];
-	static JLabel playerScore = new JLabel(" : "
-			+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
+	static JLabel playerScore = new JLabel("AZ");
 	static JButton button = new JButton();
 	static boolean isClicked = false;
 	static String CorA;
@@ -38,15 +37,10 @@ public class Game {
 		questions++;
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-		if (question.isAsked() == true) {
-			System.out.println("ALREADY ASKED GETTING NEW!");
-			return;
-		} else {
-			questionsWindow.setText(question.getValue());
-		}
+		questionsWindow.setText(question.getValue());
 
 		for (int i = 0; i < buttons.length; i++) {
-			// question.shuffleAnswers();
+			// question.shuffleAnswers(); TODO fix this.
 			List<Answer> answers = question.getAnswers();
 			Answer currentAnswer = answers.get(i);
 			Answer correctAnswer = question.getCorrectAnswer();
@@ -90,16 +84,12 @@ public class Game {
 		}
 		String category = getRandomCategory(questionsByCategory);
 		Question question = getRandomQuestionForCategory(category);
-		if (question.isAsked() == true) {
-			return;
-		} else {
-			questionsWindow.setText(question.getValue());
-		}
+		questionsWindow.setText(question.getValue());
 
 		playerScore = new JLabel(" : "
 				+ Integer.toString(Data.scorePlayer[Data.currentPlayer]));
 		playerScore.setFont(new Font("Serif", Font.BOLD, 20));
-		playerScore.setBounds(700, 30, 100, 40);
+		playerScore.setBounds(700, 35, 100, 40);
 		Main.gameWindow.add(playerScore);
 		playerScore.setForeground(Color.RED);
 
@@ -124,7 +114,6 @@ public class Game {
 					}
 					JButton button = (JButton) e.getSource();
 					Answer correctAnswer = question.getCorrectAnswer();
-					// System.out.printf(" CORA = %s%n BUTT = %s",CorA,button.getText());
 					if (button.getText().equals(
 							"<html>" + correctAnswer.getValue() + "</html>")
 							|| button.getText().equals(CorA)) {
@@ -155,8 +144,13 @@ public class Game {
 						System.out.printf("%nWrong Answer Down!");
 						if (loStrCtr > 4) {
 							System.out.println("GAME OVER!!!!!!!!!!!!");
+							Main.gameWindow
+									.setContentPane(GameOver.gameOverLab);
+							GameOver.gameOver();
+						} else {
+
+							nextQuestion();
 						}
-						nextQuestion();
 					}
 				}
 			});

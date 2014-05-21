@@ -29,7 +29,7 @@ public class Multyplayer {
 			playersT[i].setForeground(Color.white);
 			contentPane.add(inName[i]);
 			contentPane.add(playersT[i]);
-			inName[i].setPreferredSize(new Dimension(120, 20));
+			inName[i].setPreferredSize(new Dimension(125, 20));
 
 			layout.putConstraint(SpringLayout.WEST, playersT[i], 200,
 					SpringLayout.WEST, contentPane);
@@ -42,11 +42,12 @@ public class Multyplayer {
 					SpringLayout.NORTH, contentPane);
 
 			if (i == inName.length - 1) {
+				applyBut.setPreferredSize(new Dimension(120, 50));
 				contentPane.add(applyBut);
-				layout.putConstraint(SpringLayout.WEST, applyBut, 50,
+				layout.putConstraint(SpringLayout.WEST, applyBut, 25,
 						SpringLayout.EAST, playersT[i]);
 				layout.putConstraint(SpringLayout.NORTH, applyBut,
-						300 + (i * 50), SpringLayout.NORTH, contentPane);
+						400 + (i * 50), SpringLayout.NORTH, contentPane);
 			}
 		}
 
@@ -57,6 +58,7 @@ public class Multyplayer {
 					inName[i].setVisible(false);
 					playersT[i].setVisible(false);
 				}
+
 				applyBut.setVisible(false);
 				Main.gameWindow.setContentPane(Main.oldPane);
 				Main.gameWindow.setLayout(null);
@@ -64,7 +66,9 @@ public class Multyplayer {
 			}
 		});
 
+		applyBut.setForeground(Color.white);
+		applyBut.setBackground(Color.black);
 		Main.gameWindow.pack();
-		Main.gameWindow.setVisible(true);
+
 	}
 }

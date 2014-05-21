@@ -65,9 +65,16 @@ public class Main {
 				.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						Data.setNinja();
-						gameWindow.setContentPane(oldPane);
-						Game.gameComencing();
+						if (Data.alreadyPlayed == false) {
+							Data.setNinja();
+							gameWindow.setContentPane(oldPane);
+							Game.gameComencing();
+						} else {
+							Data.setNinja();
+							gameWindow.setContentPane(oldPane);
+							Game.nextQuestion();
+						}
+
 					}
 				});
 
@@ -75,12 +82,17 @@ public class Main {
 				.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						throw new UnsupportedOperationException("Sorry the multiplayer is not supported for now");
-
-//						gameWindow.setContentPane(oldPane);
-//						if (Data.ninjas > 1) {
-//							Multyplayer.displayMulty();
-//						}
+						// throw new
+						// UnsupportedOperationException("Sorry the multiplayer is not supported for now");
+						gameWindow.setContentPane(oldPane);
+						if (Data.ninjas < 2) {
+							Data.ninjas = 2;
+							Data.setNinja();
+							Multyplayer.displayMulty();
+						} else {
+							Data.setNinja();
+							Multyplayer.displayMulty();
+						}
 					}
 				});
 
@@ -101,17 +113,18 @@ public class Main {
 						Rules.show();
 					}
 				});
-		
-		menuList[MenuOption.EXIT.getValue()].addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				WindowEvent windowEvent = new WindowEvent(gameWindow,
-						WindowEvent.WINDOW_CLOSING);
-				Toolkit.getDefaultToolkit().getSystemEventQueue()
-						.postEvent(windowEvent);
-				
-			}
-		});
+
+		menuList[MenuOption.EXIT.getValue()]
+				.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						WindowEvent windowEvent = new WindowEvent(gameWindow,
+								WindowEvent.WINDOW_CLOSING);
+						Toolkit.getDefaultToolkit().getSystemEventQueue()
+								.postEvent(windowEvent);
+
+					}
+				});
 	}
 
 	public static void main(String[] args) {

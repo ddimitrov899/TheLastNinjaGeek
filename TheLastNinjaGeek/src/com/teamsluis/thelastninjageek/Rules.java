@@ -23,9 +23,9 @@ public class Rules {
 
 	public static void show() {
 		jComponentsOnView = new ArrayList<JComponent>();
-		
+
 		Main.gameWindow.setBackground(Color.BLACK);
-		
+
 		try {
 			rules = getRules(RULES_PATH);
 		} catch (IOException e) {
@@ -41,6 +41,7 @@ public class Rules {
 		rulesPane.setBackground(Color.BLACK);
 		rulesPane.setOpaque(true);
 		rulesPane.setHighlighter(null);
+		rulesPane.setLayout(null);
 
 		if (rules == null) {
 			rulesPane.setText("Rules Cannot Be loadead");
@@ -64,7 +65,7 @@ public class Rules {
 		backButton.setOpaque(true);
 		backButton.setFocusPainted(false);
 		backButton.setBackground(Color.BLACK);
-		
+
 		jComponentsOnView.add(backButton);
 
 		backButton.addActionListener(new ActionListener() {
@@ -74,7 +75,7 @@ public class Rules {
 				for (JComponent jComomentOnView : jComponentsOnView) {
 					Main.gameWindow.remove(jComomentOnView);
 				}
-				
+
 				jComponentsOnView.clear();
 				Main.gameWindow.setContentPane(Main.newPane);
 				Main.displayMenu();
