@@ -52,7 +52,7 @@ public class Game {
 			Answer currentAnswer = answers.get(i);
 			Answer correctAnswer = question.getCorrectAnswer();
 			CorA = ("<html>" + correctAnswer.getValue() + "</html>");
-			questionsWindow.setText("<html><bg color = black>"+question.getValue()+"</font></html>");
+			questionsWindow.setText(question.getValue());
 			buttons[i].setText("<html>" + currentAnswer.getValue() + "</html>");
 			buttons[i].setToolTipText(currentAnswer.getValue());
 			
