@@ -13,11 +13,11 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 
 public class Rules {
-	private static final String RULES_PATH = "resources/data/TheRules.txt";
-	private static JTextArea rulesPane;
+	private static final String RULES_PATH = "resources/data/rules.html";
+	private static JTextPane rulesPane;
 	private static String rules;
 	private static List<JComponent> jComponentsOnView;
 
@@ -33,13 +33,12 @@ public class Rules {
 			e.printStackTrace();
 		}
 
-		rulesPane = new JTextArea();
+		rulesPane = new JTextPane();
 		rulesPane.setBounds(0, 0, Main.gameWindow.getWidth() - 20,
 				Main.gameWindow.getHeight());
 		rulesPane.setFont(new Font("Serif", Font.ITALIC, 13));
 		rulesPane.setEditable(false);
 		rulesPane.setBackground(Color.BLACK);
-		rulesPane.setForeground(Color.GREEN);
 		rulesPane.setOpaque(true);
 		rulesPane.setHighlighter(null);
 
@@ -47,6 +46,7 @@ public class Rules {
 			rulesPane.setText("Rules Cannot Be loadead");
 			Main.gameWindow.add(rulesPane);
 		} else {
+			rulesPane.setContentType("text/html");
 			rulesPane.setText(rules);
 			JScrollPane paneScrollPane = new JScrollPane(rulesPane);
 			paneScrollPane
