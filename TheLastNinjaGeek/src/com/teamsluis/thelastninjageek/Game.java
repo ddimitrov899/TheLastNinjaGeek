@@ -64,8 +64,8 @@ public class Game {
 		questionsWindow.setBounds(70, 150, 655, 260);
 		questionsWindow.setFont(new Font("Serif", Font.BOLD, 26));
 		questionsWindow.setEditable(false);
-		questionsWindow.setBackground(Color.BLACK);
-		questionsWindow.setForeground(Color.BLACK);
+		questionsWindow.setBackground(Color.RED);
+		questionsWindow.setForeground(Color.RED);
 		questionsWindow.setOpaque(false);
 		questionsWindow.setHighlighter(null);
 		StyledDocument doc = questionsWindow.getStyledDocument();
